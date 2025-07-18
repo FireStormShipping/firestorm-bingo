@@ -1,0 +1,12 @@
+{
+  "datasets": [
+    "default"
+  ],
+  "available_flags": [
+    "beep",
+    "boop",
+    "bork",
+    "brrt",
+    "blab"
+  ]
+}

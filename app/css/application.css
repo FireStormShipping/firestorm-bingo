@@ -1,0 +1,93 @@
+html {
+  overflow-y: scroll;
+  /* min-width: 445px; */
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+header a {
+  text-decoration: none;
+}
+
+div.navbar.navbar-dark {
+  background-color: #131313 !important;
+}
+
+/* do not allow svgs inside of buttons to capture mouse events (let them bubble up to the button itself) */
+button.capture > svg, button.capture > svg > path, button.capture > span, a.capture > svg, a.capture > svg > path {
+  pointer-events: none;
+}
+
+.pending-load {
+  /* filter: opacity(0); */
+  display: none;
+}
+
+#content-missing-msg svg, #content-blocked-msg svg {
+  color: #a00;
+  width: 50px;
+  height: 50px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .form-control:disabled, .form-control[readonly] {
+    background-color: #333 !important;
+    color: #c2c2c2 !important;
+  }
+
+  .page-link:not(.disabled) {
+    background-color: #2b2b2b;
+    color: #3877b8;
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.dotted-underline {
+  text-decoration: dotted underline;
+  /* text-decoration-style: dotted !important; */
+}
+
+bingo-square {
+  aspect-ratio: 1/1;
+}
+
+bingo-square.border {
+  border-color: #ccc !important;
+}
+
+/* handling duplicate borders for adjacent bingo cells */
+bingo-square.border + bingo-square.border {
+  border-left: none !important;
+}
+
+div.force-col-break + bingo-square.border,
+div.force-col-break + bingo-square.border + bingo-square.border,
+div.force-col-break + bingo-square.border + bingo-square.border + bingo-square.border,
+div.force-col-break + bingo-square.border + bingo-square.border + bingo-square.border + bingo-square.border,
+div.force-col-break + bingo-square.border + bingo-square.border + bingo-square.border + bingo-square.border + bingo-square.border {
+  border-top: none !important;
+}
+
+/* styling for squares when marked */
+bingo-square.marked-square {
+  background-color: #047;
+}
+
+/* shrink text for smaller displays */
+@media only screen and (max-width: 600px) {
+    bingo-square > div.text-responsive {
+        font-size: 0.95rem;
+    }
+}
+
+/* larger displays get larger text */
+@media only screen and (min-width: 600px) {
+    bingo-square > div.text-responsive {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,212 @@
+{
+  "entries": [
+    {
+      "text": "TEST1 - Long test",
+      "flags": ["beep"],
+      "weight": 10
+    },
+    {
+      "text": "TEST2 Longer test",
+      "flags": ["beep"],
+      "weight": 10
+    },
+    {
+      "text": "TEST3 Very long test",
+      "flags": ["beep"],
+      "weight": 10
+    },
+    {
+      "text": "TEST4 Longrunontest",
+      "flags": ["beep"],
+      "weight": 10
+    },
+    {
+      "text": "TEST5 Verylongrunontest",
+      "weight": 10,
+      "sensitivity": "Q"
+    },
+    {
+      "text": "TEST6"
+    },
+    {
+      "text": "TEST7"
+    },
+    {
+      "text": "TEST8"
+    },
+    {
+      "text": "TEST9"
+    },
+    {
+      "text": "TEST10"
+    },
+    {
+      "text": "TEST11"
+    },
+    {
+      "text": "TEST12"
+    },
+    {
+      "text": "TEST13"
+    },
+    {
+      "text": "TEST14"
+    },
+    {
+      "text": "TEST15"
+    },
+    {
+      "text": "TEST16"
+    },
+    {
+      "text": "TEST17"
+    },
+    {
+      "text": "TEST18"
+    },
+    {
+      "text": "TEST19"
+    },
+    {
+      "text": "TEST20"
+    },
+    {
+      "text": "TEST21"
+    },
+    {
+      "text": "TEST22"
+    },
+    {
+      "text": "TEST23"
+    },
+    {
+      "text": "TEST24"
+    },
+    {
+      "text": "TEST25"
+    },
+    {
+      "text": "TEST26"
+    },
+    {
+      "text": "TEST27"
+    },
+    {
+      "text": "TEST28"
+    },
+    {
+      "text": "TEST29"
+    },
+    {
+      "text": "TEST30"
+    },
+    {
+      "text": "TEST31"
+    },
+    {
+      "text": "TEST32"
+    },
+    {
+      "text": "TEST33"
+    },
+    {
+      "text": "TEST34"
+    },
+    {
+      "text": "TEST35"
+    },
+    {
+      "text": "TEST36"
+    },
+    {
+      "text": "TEST37"
+    },
+    {
+      "text": "TEST38"
+    },
+    {
+      "text": "TEST39"
+    },
+    {
+      "text": "TEST40",
+      "sensitivity": "X"
+    },
+    {
+      "text": "TEST41",
+      "sensitivity": "X"
+    },
+    {
+      "text": "TEST42",
+      "sensitivity": "X"
+    },
+    {
+      "text": "TEST43",
+      "sensitivity": "X"
+    },
+    {
+      "text": "TEST44",
+      "sensitivity": "X"
+    },
+    {
+      "text": "TEST45",
+      "sensitivity": "X"
+    },
+    {
+      "text": "TEST46",
+      "sensitivity": "X"
+    },
+    {
+      "text": "TEST47",
+      "sensitivity": "X"
+    },
+    {
+      "text": "TEST48",
+      "sensitivity": "X"
+    },
+    {
+      "text": "TEST49",
+      "weight": 5,
+      "sensitivity": "X"
+    },
+    {
+      "text": "TEST50",
+      "weight": 2
+    },
+    {
+      "text": "TEST51",
+      "weight": 2
+    },
+    {
+      "text": "TEST52",
+      "weight": 2
+    },
+    {
+      "text": "TEST53",
+      "weight": 2
+    },
+    {
+      "text": "TEST54",
+      "weight": 2
+    },
+    {
+      "text": "TEST55",
+      "weight": 2
+    },
+    {
+      "text": "TEST56",
+      "weight": 2
+    },
+    {
+      "text": "TEST57",
+      "weight": 2
+    },
+    {
+      "text": "TEST58",
+      "weight": 2
+    },
+    {
+      "text": "TEST59",
+      "weight": 2
+    }
+  ]
+}

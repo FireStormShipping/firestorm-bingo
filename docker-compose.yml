@@ -1,0 +1,16 @@
+services:
+  bingo-test:
+    container_name: 'bingo'
+    image: 'nginx:latest'
+    logging:
+      driver: 'json-file'
+      options:
+        max-file: '10'
+        max-size: '10m'
+    ports:
+    - '8080:80'
+    volumes:
+    - type: 'bind'
+      source: './app'
+      target: '/usr/share/nginx/html'
+      read_only: true
