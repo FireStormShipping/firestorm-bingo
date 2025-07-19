@@ -7,7 +7,7 @@ class AppBaseUI {
   }
 
   config_url() {
-    return '/datasets/config.json';
+    return './datasets/config.json';
   }
 
   async load_config() {

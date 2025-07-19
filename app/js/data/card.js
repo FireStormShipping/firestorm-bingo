@@ -18,7 +18,7 @@ class Card {
   }
 
   dataset_url() {
-    return `/datasets/${this.dataset_name}.json`;
+    return `./datasets/${this.dataset_name}.json`;
   }
 
   set_dataset_name(dataset_name) {
@@ -52,7 +52,7 @@ class Card {
     const resp = await fetch(this.dataset_url(this.dataset_name));
 
     if (!resp.ok) {
-      throw new Error('Failed to load UI config');
+      throw new Error('Failed to load dataset');
     }
 
     const dataset = await resp.json();
