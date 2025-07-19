@@ -183,6 +183,13 @@ class CardUI extends AppBaseUI {
     });
 
     document.querySelector('button#import').addEventListener('click', (ev) => {
+      ev.preventDefault();
+
+      if (!this.import_hoist.value.length) {
+        this.ui_toast('warning', "Need an exported card code to import");
+        return;
+      }
+
       this.toggle_show_content(false);
       this.toggle_loading_spinner(true);
       this.import()
@@ -190,8 +197,6 @@ class CardUI extends AppBaseUI {
           this.ui_toast('danger', err);
           throw err;
         });
-
-      ev.preventDefault();
     });
 
     document.querySelector('button#rebuild').addEventListener('click', (ev) => {
