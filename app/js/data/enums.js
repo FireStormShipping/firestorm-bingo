@@ -3,7 +3,7 @@ class Sensitivity {
     SAFE: Symbol('S'),
     QUESTIONABLE: Symbol('Q'),
     EXPLICIT: Symbol('E'),
-    EXTREME: Symbol('X'),
+    // EXTREME: Symbol('X'),
   }
 
   static convert(str) {
@@ -28,8 +28,8 @@ class Sensitivity {
   static limit(value, max_threshold) {
     let permitted_values = [];
     switch(max_threshold) {
-      case Sensitivity.vals.EXTREME:
-        permitted_values.push(Sensitivity.vals.EXTREME);
+      // case Sensitivity.vals.EXTREME:
+      //   permitted_values.push(Sensitivity.vals.EXTREME);
       case Sensitivity.vals.EXPLICIT:
         permitted_values.push(Sensitivity.vals.EXPLICIT);
       case Sensitivity.vals.QUESTIONABLE:

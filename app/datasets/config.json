@@ -1,12 +1,11 @@
 {
   "datasets": [
-    "default"
+    "kinktober_2025",
+    "test"
   ],
   "available_flags": [
-    "beep",
-    "boop",
-    "bork",
-    "brrt",
-    "blab"
+    "monster",
+    "consent issues",
+    "extreme"
   ]
 }
