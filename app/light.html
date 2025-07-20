@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
 <head>
   <meta charset="utf-8">
   <title>bingo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <meta name="description" content=""> -->
   <!-- <meta name="author" content=""> -->
-  <meta name="color-scheme" content="dark">
+  <meta name="color-scheme" content="light">
   <!-- <link rel="icon" href="./favicon.ico"> -->
   <!-- <link rel="icon" href="./favicon.svg" type="image/svg+xml"> -->
   <!-- <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180"> -->
-  <link rel="stylesheet" href="./css/application.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/application.css">
 </head>
 <body>
   <!-- <header>
@@ -73,7 +73,7 @@
             </div>
             <div class="row px-4 mt-2">
               <div class="col-lg-8 offset-lg-2">
-                <button class="w-100 btn btn-primary zaddy btn-lg" type="submit" id="submit">build my bingo card</button>
+                <button class="w-100 btn btn-primary btn-lg zaddy" type="submit" id="submit">build my bingo card</button>
               </div>
             </div>
             <div class="row d-flex justify-content-center align-items-center py-lg-2 py-1 mt-5 mb-3 px-4">
@@ -91,7 +91,7 @@
             </div>
             <div class="row px-4 mt-2">
               <div class="col-lg-8 offset-lg-2">
-                <button class="w-100 btn btn-primary zaddy btn-lg" type="submit" id="import">import a previous card</button>
+                <button class="w-100 btn btn-primary btn-lg zaddy" type="submit" id="import">import a previous card</button>
               </div>
             </div>
           </form>
@@ -121,9 +121,9 @@
             <div class="row row-cols-5 mx-lg-5 px-lg-5" id="bingo-frame"></div>
             <div class="row mx-lg-5 px-lg-5 mt-3">
               <div class="input-group px-0">
-                <button class="btn btn-secondary" type="button" id="export">Export</button>
+                <button class="btn btn-outline-secondary" type="button" id="export">Export</button>
                 <textarea class="form-control" id="export-card-code" rows="2" disabled="disabled"></textarea>
-                <button class="btn btn-secondary capture px-3" type="button" id="copy-export">
+                <button class="btn btn-outline-secondary capture px-3" type="button" id="copy-export">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard my-1" viewBox="0 0 16 16">
                     <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
                     <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
@@ -132,7 +132,7 @@
               </div>
             </div>
             <div class="row mx-lg-5 px-lg-5 mt-3">
-              <button class="w-80 btn btn-primary zaddy btn-lg" type="submit" id="rebuild">build another</button>
+              <button class="w-80 btn btn-primary btn-lg zaddy" type="submit" id="rebuild">build another</button>
             </div>
           </div>
         </div>

@@ -7,6 +7,10 @@ html {
   navigation: auto;
 }
 
+.zaddy {
+  background-color: var(--bs-purple) !important;
+}
+
 header a {
   text-decoration: none;
 }
@@ -32,12 +36,13 @@ button.capture > svg, button.capture > svg > path, button.capture > span, a.capt
 }
 
 @media (prefers-color-scheme: dark) {
-  .form-control:disabled, .form-control[readonly] {
+  html[data-bs-theme="dark"] .form-control:disabled,
+  html[data-bs-theme="dark"] .form-control[readonly] {
     background-color: #333 !important;
     color: #c2c2c2 !important;
   }
 
-  .page-link:not(.disabled) {
+  html[data-bs-theme="dark"] .page-link:not(.disabled) {
     background-color: #2b2b2b;
     color: #3877b8;
   }
@@ -74,14 +79,18 @@ div.force-col-break + bingo-square.border + bingo-square.border + bingo-square.b
 }
 
 /* styling for squares when marked */
-bingo-square.marked-square {
-  background-color: #047;
+html[data-bs-theme="dark"] bingo-square.marked-square {
+  background-color: rgb(120, 30, 30);
+}
+
+html[data-bs-theme="light"] bingo-square.marked-square {
+  background-color: rgb(150, 0, 0);
 }
 
 /* shrink text for smaller displays */
 @media only screen and (max-width: 600px) {
     bingo-square > div.text-responsive {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 }
 
