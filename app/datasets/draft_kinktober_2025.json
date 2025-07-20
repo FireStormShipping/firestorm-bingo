@@ -16,7 +16,7 @@
       "sensitivity": "S"
     },
     {
-      "text": "Hurt/Comfort",
+      "text": "Hurt / Comfort",
       "weight": 1,
       "sensitivity": "S"
     },
@@ -26,7 +26,7 @@
       "sensitivity": "S"
     },
     {
-      "text": "Trip to Martha's Rest",
+      "text": "Martha's Rest",
       "weight": 1,
       "sensitivity": "S"
     },
@@ -51,7 +51,12 @@
       "sensitivity": "S"
     },
     {
-      "text": "Wedding or Bridal Carry",
+      "text": "Wedding",
+      "weight": 1,
+      "sensitivity": "S"
+    },
+    {
+      "text": "Bridal Carry",
       "weight": 1,
       "sensitivity": "S"
     },
@@ -86,7 +91,12 @@
       "sensitivity": "S"
     },
     {
-      "text": "Forehead Kisses or Touch",
+      "text": "Forehead Kisses",
+      "weight": 1,
+      "sensitivity": "S"
+    },
+    {
+      "text": "Forehead Touch",
       "weight": 1,
       "sensitivity": "S"
     },
@@ -101,7 +111,7 @@
       "sensitivity": "S"
     },
     {
-      "text": "Sharing or Swapping Clothes",
+      "text": "Sharing Clothes",
       "weight": 1,
       "sensitivity": "S"
     },
@@ -141,7 +151,7 @@
       "sensitivity": "S"
     },
     {
-      "text": "Waiting Out The Weather",
+      "text": "Waiting Out Weather",
       "weight": 1,
       "sensitivity": "S"
     },
@@ -166,7 +176,7 @@
       "sensitivity": "S"
     },
     {
-      "text": "Literal Sleeping or Napping Together",
+      "text": "Napping Together",
       "weight": 1,
       "sensitivity": "S"
     },
@@ -223,7 +233,7 @@
     {
       "text": "Touch-starved",
       "weight": 1,
-      "sensitivity": "S"
+      "sensitivity": "Q"
     },
     {
       "text": "Different Eikon",
@@ -232,202 +242,210 @@
     },
     {
       "text": "Bondage",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "69",
+      "text": "Ears / Tail",
       "weight": 2,
+      "sensitivity": "Q"
+    },
+    {
+      "text": "69",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Shibari",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Trip to The Veil",
-      "weight": 2,
+      "text": "The Veil",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Electrostim",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Waxplay",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "In Public",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Edging",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Pet Play",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Dub-Con",
-      "weight": 2,
-      "sensitivity": "E"
+      "weight": 3,
+      "sensitivity": "E",
+      "flags": [
+        "consent issues"
+      ]
     },
     {
       "text": "Exhibitionism",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Breath Play",
-      "weight": 2,
+      "text": "Choking",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Blindfold",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Breeding Kink",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Dacryphilia",
-      "weight": 2,
+      "text": "Crying Kink",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Masturbation",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Boot Worship",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Body Worship",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Gloves",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Scent Kink",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Clothed and Unclothed",
-      "weight": 2,
+      "text": "Clothed / Unclothed",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Roleplay",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Daddy or Sir",
-      "weight": 2,
+      "text": "Daddy Kink",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Body Swap",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Consensual Somnophilia",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Biting",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Phone Sex",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Sex Pollen or Aphrodisiacs",
-      "weight": 2,
+      "text": "Aphrodisiacs",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Lingerie",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Dirty Talk",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Overstimulation",
-      "weight": 2,
+      "text": "Overstim",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Voice Kink",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Praise Kink",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Begging",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Priest or Nun",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Nurse or Doctor",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Threesome",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Degradation",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Sex Toys",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Stuck in a Wall/Hole",
-      "weight": 2,
+      "text": "Stuck / Trapped",
+      "weight": 3,
       "sensitivity": "E",
       "flags": [
         "consent issues"
@@ -435,138 +453,151 @@
     },
     {
       "text": "Consensual Heat/Rut",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Fallen Tech",
-      "weight": 2,
+      "weight": 3,
+      "sensitivity": "Q"
+    },
+    {
+      "text": "Feral Play",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Feral Play or Prey/Predator",
-      "weight": 2,
+      "text": "Prey / Predator",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Size Queen",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Coming Early",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Ruined Orgasm",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Coming Untouched",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Morning Sex",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Cockwarming",
-      "weight": 2,
+      "weight": 3,
+      "sensitivity": "E"
+    },
+    {
+      "text": "Holewarming",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Glory Hole",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Eikonic Powers",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Eikonic Instincts",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Cock Cage",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Collaring",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Blow Jobs",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Frotting",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Rimming",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Spanking",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Lap Dance",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Strip Tease",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Genderswap",
-      "weight": 2,
+      "text": "Gender Swap",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Only One Bed/Floor",
-      "weight": 2,
+      "text": "One Bed",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Shotgunning",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Temperature Play",
-      "weight": 2,
-      "sensitivity": "E"
-    },
-    {
-      "text": "Massage",
-      "weight": 2,
+      "text": "Temp Play",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Body hair",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
       "text": "Creampie",
-      "weight": 2,
+      "weight": 3,
       "sensitivity": "E"
+    },
+    {
+      "text": "Sex Pollen",
+      "weight": 4,
+      "sensitivity": "E",
+      "flags": [
+        "monster"
+      ]
     },
     {
       "text": "Eikon on Eikon",
@@ -585,7 +616,7 @@
       ]
     },
     {
-      "text": "Size Difference",
+      "text": "Size Diff",
       "weight": 4,
       "sensitivity": "E",
       "flags": [
@@ -593,7 +624,7 @@
       ]
     },
     {
-      "text": "WereCoeurl!Cid",
+      "text": "WereCoeurl Cid",
       "weight": 4,
       "sensitivity": "E",
       "flags": [
@@ -601,7 +632,7 @@
       ]
     },
     {
-      "text": "Werewolf!Clive",
+      "text": "Werewolf Clive",
       "weight": 4,
       "sensitivity": "E",
       "flags": [
@@ -617,7 +648,7 @@
       ]
     },
     {
-      "text": "Tail Shenanigans",
+      "text": "Tail Sex",
       "weight": 4,
       "sensitivity": "E",
       "flags": [
@@ -705,7 +736,7 @@
       ]
     },
     {
-      "text": "Akashic/Zombie",
+      "text": "Akashic / Zombie",
       "weight": 4,
       "sensitivity": "E",
       "flags": [
@@ -713,7 +744,7 @@
       ]
     },
     {
-      "text": "Animal-like (ie. Viera)",
+      "text": "Furry / Anthro",
       "weight": 4,
       "sensitivity": "E",
       "flags": [
@@ -737,7 +768,7 @@
       ]
     },
     {
-      "text": "Cuckolding or Infidelity",
+      "text": "Cuckolding / Infidelity",
       "weight": 5,
       "sensitivity": "E",
       "flags": [
@@ -745,7 +776,7 @@
       ]
     },
     {
-      "text": "Omorashi (Watersports)",
+      "text": "Watersports",
       "weight": 5,
       "sensitivity": "E",
       "flags": [
@@ -803,7 +834,7 @@
       ]
     },
     {
-      "text": "Consensual Public Use",
+      "text": "Trusted Use",
       "weight": 5,
       "sensitivity": "E",
       "flags": [
@@ -811,7 +842,7 @@
       ]
     },
     {
-      "text": "Non-Con Public Use",
+      "text": "Public Use",
       "weight": 5,
       "sensitivity": "E",
       "flags": [
@@ -844,7 +875,7 @@
       ]
     },
     {
-      "text": "Dub/Non-con Somnophilia",
+      "text": "Somnophilia",
       "weight": 5,
       "sensitivity": "E",
       "flags": [
