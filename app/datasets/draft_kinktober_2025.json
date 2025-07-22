@@ -452,7 +452,7 @@
       ]
     },
     {
-      "text": "Consensual Heat/Rut",
+      "text": "Heat/Rut",
       "weight": 3,
       "sensitivity": "E"
     },
@@ -589,6 +589,11 @@
     {
       "text": "Creampie",
       "weight": 3,
+      "sensitivity": "E"
+    },
+    {
+      "text": "Adult Age Play",
+      "weight": 4,
       "sensitivity": "E"
     },
     {
@@ -769,194 +774,168 @@
     },
     {
       "text": "Cuckolding / Infidelity",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme"
+        "niche"
       ]
     },
     {
       "text": "Watersports",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme"
+        "risk aware consensual kink"
       ]
     },
     {
       "text": "Blood Play",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme"
+        "risk aware consensual kink"
       ]
     },
     {
       "text": "Knife Play",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme"
+        "risk aware consensual kink"
       ]
     },
     {
       "text": "Cannibalism",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme"
+        "death"
       ]
     },
     {
       "text": "Ultima Mind Control",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme",
         "consent issues"
       ]
     },
     {
       "text": "Non-Con",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme",
         "consent issues"
       ]
     },
     {
       "text": "Piercing Play",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme"
+        "risk aware consensual kink"
       ]
     },
     {
       "text": "Trusted Use",
-      "weight": 5,
-      "sensitivity": "E",
-      "flags": [
-        "extreme"
-      ]
+      "weight": 4,
+      "sensitivity": "E"
     },
     {
       "text": "Public Use",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme",
         "consent issues"
       ]
     },
     {
       "text": "Breath Play",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme"
+        "risk aware consensual kink"
       ]
     },
     {
       "text": "Torture",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme"
+        "risk aware consensual kink"
       ]
     },
     {
       "text": "Cock & Ball Torture",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme"
+        "risk aware consensual kink"
       ]
     },
     {
       "text": "Somnophilia",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme",
         "consent issues"
       ]
     },
     {
       "text": "Mind Break",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme",
         "consent issues"
       ]
     },
     {
       "text": "Main Character Death",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme"
+        "death"
       ]
     },
     {
       "text": "Fuck or Die",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme",
+        "death",
         "consent issues"
       ]
     },
     {
       "text": "Pain Play",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme"
-      ]
-    },
-    {
-      "text": "Heat/Rut",
-      "weight": 5,
-      "sensitivity": "E",
-      "flags": [
-        "extreme",
-        "consent issues"
+        "risk aware consensual kink"
       ]
     },
     {
       "text": "Body Mutilation",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme"
+        "risk aware consensual kink"
       ]
     },
     {
       "text": "Necrophilia",
-      "weight": 5,
+      "weight": 2,
       "sensitivity": "E",
       "flags": [
-        "extreme",
+        "death",
         "consent issues"
       ]
     },
     {
-      "text": "Age Play",
-      "weight": 5,
-      "sensitivity": "E",
-      "flags": [
-        "extreme"
-      ]
-    },
-    {
       "text": "Consensual Non-Consent",
-      "weight": 5,
+      "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "extreme",
         "consent issues"
       ]
     }
