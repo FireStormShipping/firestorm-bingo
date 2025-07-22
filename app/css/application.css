@@ -52,10 +52,6 @@ button.capture > svg, button.capture > svg > path, button.capture > span, a.capt
   text-align: justify;
 }
 
-.dotted-underline {
-  text-decoration: dotted underline;
-  /* text-decoration-style: dotted !important; */
-}
 
 bingo-square {
   aspect-ratio: 1/1;
@@ -85,6 +81,14 @@ html[data-bs-theme="dark"] bingo-square.marked-square {
 
 html[data-bs-theme="light"] bingo-square.marked-square {
   background-color: rgb(150, 0, 0);
+}
+
+.lizzer {
+  background-image: url("images/lizzer_sploot.png");
+}
+
+.coeurl {
+  background-image: url("images/coeurl_cid_lounge.png");
 }
 
 /* shrink text for smaller displays */
