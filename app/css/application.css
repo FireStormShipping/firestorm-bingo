@@ -93,6 +93,11 @@ html[data-bs-theme="light"] bingo-square.marked-square {
   background: 10% -60% / 50% no-repeat url("../images/coeurl_cid_lounge.png")
 }
 
+#theme_toggle{
+  border: none;
+  background: none;
+}
+
 /* shrink text for smaller displays */
 @media only screen and (max-width: 600px) {
     bingo-square > div.text-responsive {

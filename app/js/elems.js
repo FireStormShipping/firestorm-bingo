@@ -138,39 +138,9 @@ class BingoSquareElem extends UIElement {
   }
 }
 
-class BootstrapThemeToggle {
-  constructor(buttonId = 'theme_toggle') {
-    this.button = document.getElementById(buttonId);
-    this.root = document.documentElement; // <html>
-
-    if (!this.button) return;
-
-    this.button.addEventListener('click', () => this.toggleTheme());
-    this.setInitialTheme();
-  }
-
-  toggleTheme() {
-    const current = this.root.getAttribute('data-bs-theme');
-    const newTheme = current === 'dark' ? 'light' : 'dark';
-    this.root.setAttribute('data-bs-theme', newTheme);
-    this.updateIcon(newTheme);
-  }
-
-    updateIcon(theme) {
-    if (theme === 'dark') {
-      this.icon.classList.remove('fa-moon');
-      this.icon.classList.add('fa-sun');
-    } else {
-      this.icon.classList.remove('fa-sun');
-      this.icon.classList.add('fa-moon');
-    }
-  }
-}
-
 export {
   BingoSquareElem,
   DatasetElem,
   FlagElem,
-  SensitivityElem,
-  BootstrapThemeToggle
+  SensitivityElem
 };
