@@ -126,7 +126,7 @@
       "sensitivity": "S"
     },
     {
-      "text": "AU or Crossover",
+      "text": "AU or Cross-over",
       "weight": 1,
       "sensitivity": "S"
     },
@@ -266,7 +266,7 @@
       "sensitivity": "E"
     },
     {
-      "text": "Electrostim",
+      "text": "Electro-stim",
       "weight": 3,
       "sensitivity": "E"
     },
@@ -452,7 +452,7 @@
       ]
     },
     {
-      "text": "Heat/Rut",
+      "text": "Heat / Rut",
       "weight": 3,
       "sensitivity": "E"
     },
@@ -497,12 +497,12 @@
       "sensitivity": "E"
     },
     {
-      "text": "Cockwarming",
+      "text": "Cock-warming",
       "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Holewarming",
+      "text": "Hole-warming",
       "weight": 3,
       "sensitivity": "E"
     },
