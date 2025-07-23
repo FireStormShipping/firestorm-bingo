@@ -77,10 +77,12 @@ div.force-col-break + bingo-square.border + bingo-square.border + bingo-square.b
 /* styling for squares when marked */
 html[data-bs-theme="dark"] bingo-square.marked-square {
   background-color: rgb(120, 30, 30);
+  color: white;
 }
 
 html[data-bs-theme="light"] bingo-square.marked-square {
   background-color: rgb(150, 0, 0);
+  color: white;
 }
 
 .lizzer {
