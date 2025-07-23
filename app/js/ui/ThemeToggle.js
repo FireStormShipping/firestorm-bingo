@@ -19,11 +19,11 @@ export default class ThemeToggle {
       const darkIcon = document.getElementById('toggle_dark');
       const lightIcon = document.getElementById('toggle_light');
     if (theme === 'dark') {
-      darkIcon.classList.remove('d-none');
-      lightIcon.classList.add('d-none');
-    } else {
       lightIcon.classList.remove('d-none');
       darkIcon.classList.add('d-none');
+    } else {
+      darkIcon.classList.remove('d-none');
+      lightIcon.classList.add('d-none');
     }
   }
 }
