@@ -84,11 +84,11 @@ html[data-bs-theme="light"] bingo-square.marked-square {
 }
 
 .lizzer {
-  background-image: url("../images/lizzer_sploot.png");
+  background: 100% 105% / 50% no-repeat url("../images/lizzer_sploot.png")
 }
 
 .coeurl {
-  background-image: url("../images/coeurl_cid_lounge.png");
+  background: 10% -60% / 50% no-repeat url("../images/coeurl_cid_lounge.png")
 }
 
 /* shrink text for smaller displays */
