@@ -1,7 +1,7 @@
 export default class ThemeToggle {
-  constructor(buttonId = 'theme_toggle') {
+  constructor(buttonId = 'theme_toggler') {
     this.button = document.getElementById(buttonId);
-    this.root = document.documentElement; // <html>
+    this.root = document.documentElement;
 
     if (!this.button) return;
 
@@ -18,6 +18,7 @@ export default class ThemeToggle {
     updateIcon(theme) {
       const darkIcon = document.getElementById('toggle_dark');
       const lightIcon = document.getElementById('toggle_light');
+      
     if (theme === 'dark') {
       lightIcon.classList.remove('d-none');
       darkIcon.classList.add('d-none');
