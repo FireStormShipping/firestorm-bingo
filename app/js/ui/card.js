@@ -170,6 +170,8 @@ class CardUI extends AppBaseUI {
   }
 
   bind_event_handlers() {
+    super.bind_event_handlers();
+
     document.querySelector('button#submit').addEventListener('click', (ev) => {
       this.toggle_show_content(false);
       this.toggle_loading_spinner(true);

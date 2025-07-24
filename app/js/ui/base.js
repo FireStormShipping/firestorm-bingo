@@ -4,6 +4,8 @@ class AppBaseUI {
     this.datasets = [];
 
     this.alerts_selector = document.querySelector('div.toast-container');
+
+    this.set_theme();
   }
 
   config_url() {
@@ -87,6 +89,40 @@ class AppBaseUI {
     } else {
       document.querySelector('#wrapper').classList.add('pending-load');
     }
+  }
+
+  update_theme_icon(theme) {
+    const lightIcon = document.querySelector('#theme-toggle > svg.theme-icon-light');
+    const darkIcon = document.querySelector('#theme-toggle > svg.theme-icon-dark');
+    if(theme === 'dark') {
+      darkIcon.classList.remove('collapse');
+      lightIcon.classList.add('collapse');
+    } else {
+      lightIcon.classList.remove('collapse');
+      darkIcon.classList.add('collapse');
+    }
+  }
+
+  set_theme(newTheme) {
+    if(newTheme !== 'dark' && newTheme !== 'light') {
+      newTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    document.documentElement.setAttribute('data-bs-theme', newTheme);
+    this.update_theme_icon(newTheme);
+  }
+
+  toggle_theme() {
+    const current = document.documentElement.getAttribute('data-bs-theme');
+    const newTheme = current === 'dark' ? 'light' : 'dark';
+    this.set_theme(newTheme);
+  }
+
+  bind_event_handlers() {
+    document.querySelector('button#theme-toggle').addEventListener('click', (ev) => {
+      this.toggle_theme();
+      ev.preventDefault();
+    });
   }
 }
 
