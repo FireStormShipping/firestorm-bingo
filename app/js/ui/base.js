@@ -5,7 +5,7 @@ class AppBaseUI {
 
     this.alerts_selector = document.querySelector('div.toast-container');
 
-    this.set_theme()
+    this.set_theme();
   }
 
   config_url() {
@@ -105,7 +105,7 @@ class AppBaseUI {
 
   set_theme(newTheme) {
     if(newTheme !== 'dark' && newTheme !== 'light') {
-      newTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      newTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
 
     document.documentElement.setAttribute('data-bs-theme', newTheme);
@@ -115,7 +115,7 @@ class AppBaseUI {
   toggle_theme() {
     const current = document.documentElement.getAttribute('data-bs-theme');
     const newTheme = current === 'dark' ? 'light' : 'dark';
-    this.set_theme(newTheme)
+    this.set_theme(newTheme);
   }
 
   bind_event_handlers() {
