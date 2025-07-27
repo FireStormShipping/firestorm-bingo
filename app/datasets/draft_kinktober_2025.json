@@ -102,7 +102,7 @@
     },
     {
       "text": "Body Swap",
-      "weight": 1,
+      "weight": 2,
       "sensitivity": "Q"
     },
     {
@@ -142,7 +142,7 @@
     },
     {
       "text": "Shared Body Heat",
-      "weight": 1,
+      "weight": 2,
       "sensitivity": "Q"
     },
     {
@@ -172,7 +172,7 @@
     },
     {
       "text": "Bathing or Onsen",
-      "weight": 1,
+      "weight": 2,
       "sensitivity": "Q"
     },
     {
@@ -197,7 +197,7 @@
     },
     {
       "text": "MPreg",
-      "weight": 1,
+      "weight": 2,
       "sensitivity": "Q",
       "flags": [
         "pregnancy"
@@ -230,7 +230,7 @@
     },
     {
       "text": "Dressing Each Other",
-      "weight": 1,
+      "weight": 2,
       "sensitivity": "Q"
     },
     {
@@ -240,7 +240,7 @@
     },
     {
       "text": "Touch-starved",
-      "weight": 1,
+      "weight": 2,
       "sensitivity": "Q"
     },
     {
@@ -265,8 +265,8 @@
     },
     {
       "text": "Shibari",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 2,
+      "sensitivity": "Q"
     },
     {
       "text": "The Veil",
@@ -318,8 +318,8 @@
     },
     {
       "text": "Blindfold",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 2,
+      "sensitivity": "Q"
     },
     {
       "text": "Breeding Kink",
@@ -348,8 +348,8 @@
     },
     {
       "text": "Gloves",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 2,
+      "sensitivity": "Q"
     },
     {
       "text": "Scent Kink",
@@ -383,8 +383,8 @@
     },
     {
       "text": "Biting",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 2,
+      "sensitivity": "Q"
     },
     {
       "text": "Phone Sex",
@@ -466,7 +466,7 @@
     },
     {
       "text": "Fallen Tech",
-      "weight": 3,
+      "weight": 2,
       "sensitivity": "Q"
     },
     {
@@ -521,13 +521,13 @@
     },
     {
       "text": "Eikonic Powers",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 1,
+      "sensitivity": "S"
     },
     {
       "text": "Eikonic Instincts",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 1,
+      "sensitivity": "S"
     },
     {
       "text": "Cock Cage",
@@ -536,8 +536,8 @@
     },
     {
       "text": "Collaring",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 2,
+      "sensitivity": "Q"
     },
     {
       "text": "Blow Jobs",
@@ -556,8 +556,8 @@
     },
     {
       "text": "Spanking",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 2,
+      "sensitivity": "Q"
     },
     {
       "text": "Lap Dance",
@@ -571,8 +571,8 @@
     },
     {
       "text": "Gender Swap",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 2,
+      "sensitivity": "Q"
     },
     {
       "text": "One Bed",
@@ -581,7 +581,7 @@
     },
     {
       "text": "Shotgunning",
-      "weight": 3,
+      "weight": 2,
       "sensitivity": "Q"
     },
     {
@@ -591,8 +591,8 @@
     },
     {
       "text": "Body hair",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 2,
+      "sensitivity": "Q"
     },
     {
       "text": "Creampie",
@@ -609,7 +609,8 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster"
+        "monster",
+        "consent issues"
       ]
     },
     {
@@ -653,7 +654,7 @@
       ]
     },
     {
-      "text": "Semi-Primed",
+      "text": "Semi-Primed Sex",
       "weight": 4,
       "sensitivity": "E",
       "flags": [
@@ -705,7 +706,8 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster"
+        "monster",
+        "pregnancy"
       ]
     },
     {
@@ -758,11 +760,8 @@
     },
     {
       "text": "Tummy bulge",
-      "weight": 4,
-      "sensitivity": "E",
-      "flags": [
-        "monster"
-      ]
+      "weight": 3,
+      "sensitivity": "E"
     },
     {
       "text": "Centaur",
@@ -775,7 +774,10 @@
     {
       "text": "Cuckolding / Infidelity",
       "weight": 4,
-      "sensitivity": "E"
+      "sensitivity": "E",
+      "flags": [
+        "consent issues"
+      ]
     },
     {
       "text": "Watersports",
@@ -835,7 +837,7 @@
     },
     {
       "text": "Trusted Use",
-      "weight": 4,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
@@ -859,7 +861,7 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "risk aware consensual kink"
+        "consent issues"
       ]
     },
     {
@@ -888,8 +890,8 @@
     },
     {
       "text": "Main Character Death",
-      "weight": 4,
-      "sensitivity": "E",
+      "weight": 1,
+      "sensitivity": "S",
       "flags": [
         "death"
       ]
