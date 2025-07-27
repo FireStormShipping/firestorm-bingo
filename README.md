@@ -91,9 +91,9 @@ the properties available to entries follow:
 
 ### sensitivity
 
-sensitivity is a *gradient*, going from `SAFE` to `QUESTIONABLE` to `EXPLICIT` to `EXTREME`.
+sensitivity is a *gradient*, going from `SAFE` to `QUESTIONABLE` to `EXPLICIT`.
 for example, if a user specifies `SAFE` as their threshold, ***all*** other sensitivity levels are banned, and entries using those sensitivity levels are excluded from selection.
-as another example, if a user specifies `EXPLICIT` as their threshold, then entries using the sensitivities `SAFE`, `QUESTIONABLE`, and `EXPLICIT` will be candidates for random selection while entries using the sensitivity `EXTREME` will be excluded.
+as another example, if a user specifies `QUESTIONABLE` as their threshold, then entries using the sensitivities `SAFE` and `QUESTIONABLE` will be candidates for random selection while entries using the sensitivity `EXPLICIT` will be excluded.
 
 ## pool randomness
 
