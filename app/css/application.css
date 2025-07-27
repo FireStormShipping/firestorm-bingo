@@ -85,12 +85,13 @@ html[data-bs-theme="light"] bingo-square.marked-square {
   color: white;
 }
 
+/* The lizzer and coeurl backgrounds have yet to play nice. */
 .lizzer {
-  background: 100% 105% / 50% no-repeat url("../images/lizzer_sploot.png")
+  background: 100% 105% / 50% no-repeat url("../images/ren_lizzer_sploot.png")
 }
 
 .coeurl {
-  background: 10% -60% / 50% no-repeat url("../images/coeurl_cid.png")
+  background: 10% -60% / 50% no-repeat url("../images/ren_coeurl_cid.png")
 }
 
 /* shrink text for smaller displays */
