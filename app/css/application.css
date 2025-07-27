@@ -90,13 +90,13 @@ html[data-bs-theme="light"] bingo-square.marked-square {
 }
 
 .coeurl {
-  background: 10% -60% / 50% no-repeat url("../images/coeurl_cid_lounge.png")
+  background: 10% -60% / 50% no-repeat url("../images/coeurl_cid.png")
 }
 
 /* shrink text for smaller displays */
 @media only screen and (max-width: 600px) {
     bingo-square > div.text-responsive {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 }
 
