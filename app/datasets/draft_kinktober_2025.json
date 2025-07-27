@@ -103,7 +103,7 @@
     {
       "text": "Body Swap",
       "weight": 1,
-      "sensitivity": "S"
+      "sensitivity": "Q"
     },
     {
       "text": "Soul Mates",
@@ -143,7 +143,7 @@
     {
       "text": "Shared Body Heat",
       "weight": 1,
-      "sensitivity": "S"
+      "sensitivity": "Q"
     },
     {
       "text": "Cuddling",
@@ -173,7 +173,7 @@
     {
       "text": "Bathing or Onsen",
       "weight": 1,
-      "sensitivity": "S"
+      "sensitivity": "Q"
     },
     {
       "text": "Napping Together",
@@ -194,6 +194,14 @@
       "text": "Kidfic",
       "weight": 1,
       "sensitivity": "S"
+    },
+    {
+      "text": "MPreg",
+      "weight": 1,
+      "sensitivity": "Q",
+      "flags": [
+        "pregnancy"
+      ]
     },
     {
       "text": "Crack",
@@ -223,7 +231,7 @@
     {
       "text": "Dressing Each Other",
       "weight": 1,
-      "sensitivity": "S"
+      "sensitivity": "Q"
     },
     {
       "text": "Lap pillow",
@@ -574,7 +582,7 @@
     {
       "text": "Shotgunning",
       "weight": 3,
-      "sensitivity": "E"
+      "sensitivity": "Q"
     },
     {
       "text": "Temp Play",
@@ -593,7 +601,7 @@
     },
     {
       "text": "Adult Age Play",
-      "weight": 4,
+      "weight": 3,
       "sensitivity": "E"
     },
     {
@@ -767,10 +775,7 @@
     {
       "text": "Cuckolding / Infidelity",
       "weight": 4,
-      "sensitivity": "E",
-      "flags": [
-        "niche"
-      ]
+      "sensitivity": "E"
     },
     {
       "text": "Watersports",
