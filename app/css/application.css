@@ -3,6 +3,14 @@ html {
   /* min-width: 445px; */
 }
 
+body {
+  display: grid;
+  place-content: center center;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+}
+
 @view-transition {
   navigation: auto;
 }
@@ -53,27 +61,6 @@ button.capture > svg, button.capture > svg > path, button.capture > span, a.capt
 }
 
 
-bingo-square {
-  aspect-ratio: 1/1;
-}
-
-bingo-square.border {
-  border-color: #ccc !important;
-}
-
-/* handling duplicate borders for adjacent bingo cells */
-bingo-square.border + bingo-square.border {
-  border-left: none !important;
-}
-
-div.force-col-break + bingo-square.border,
-div.force-col-break + bingo-square.border + bingo-square.border,
-div.force-col-break + bingo-square.border + bingo-square.border + bingo-square.border,
-div.force-col-break + bingo-square.border + bingo-square.border + bingo-square.border + bingo-square.border,
-div.force-col-break + bingo-square.border + bingo-square.border + bingo-square.border + bingo-square.border + bingo-square.border {
-  border-top: none !important;
-}
-
 /* styling for squares when marked */
 html[data-bs-theme="dark"] bingo-square.marked-square {
   background-color: rgb(120, 30, 30);
@@ -94,16 +81,110 @@ html[data-bs-theme="light"] bingo-square.marked-square {
   background: 10% -60% / 50% no-repeat url("../images/ren_coeurl_cid.png")
 }
 
-/* shrink text for smaller displays */
-@media only screen and (max-width: 600px) {
-    bingo-square > div.text-responsive {
-        font-size: 0.85rem;
-    }
+/* TLB -- start */
+/* TLB -- start */
+/* TLB -- start */
+.coeurl {
+	display: grid;
+	min-height: 100%;
+	place-content: center center;
+
+	gap: 1vmin;
 }
 
-/* larger displays get larger text */
-@media only screen and (min-width: 600px) {
-    bingo-square > div.text-responsive {
-        font-size: 1.25rem;
+#bingo-card {
+  border-radius: 1vmin;
+  padding: 1.5vmin;
+
+  display: grid;
+  gap: 0.5vmin;
+
+  --max-size: 70vmin;
+
+  --top-color: orange;
+  --middle-color: #888;
+  --bottom-color: pink;
+  --card-text: white;
+  --match-color: rgba(85, 0, 53, 0.8);
+  --match-text: white;
+
+  background-color: var(--middle-color);
+
+  background-image: linear-gradient(
+      120deg,
+      var(--top-color) 0%,
+      transparent 25%,
+      transparent 75%,
+      var(--bottom-color) 100%
+    ),
+    linear-gradient(
+      90deg,
+      var(--top-color) -10%,
+      transparent 5%,
+      transparent 95%,
+      var(--bottom-color) 110%
+    );
+}
+
+#bingo-header {
+  width: var(--max-size);
+  display: grid;
+  gap: 0.5vmin;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  & > * {
+    display: grid;
+    text-align: center;
+    place-content: center center;
+    font-size: 5vmin;
+    background: #000000dd;
+    color: white;
+
+    border-radius: 0.5vmin;
+
+    & > h3 {
+      margin: 1vmin;
+      padding: auto;
     }
+  }
+}
+
+#bingo-frame {
+  width: var(--max-size);
+  display: grid;
+  gap: 0.5vmin;
+  grid-template-columns: repeat(5, 1fr);
+
+  & > bingo-square {
+    aspect-ratio: 1;
+    background: #000000aa;
+    word-wrap: balanced;
+    text-wrap: wrap;
+    display: grid;
+    text-align: center;
+    place-content: center center;
+    font-size: 2vmin;
+
+    border-radius: 0.5vmin;
+    border: solid #000000aa 0.2vmin;
+    padding: 1vmin;
+    overflow: hidden;
+	  cursor: pointer;
+
+    color: var(--card-text);
+    transition: none 150ms;
+    transition-property: color, background;
+
+
+    &.marked-square {
+      color: var(--match-text);
+      background: var(--match-color);
+    }
+
+    &[data-id=bingo-square-num-12]{
+      font-size: 3vmin;
+      font-weight: bold;
+    }
+  }
 }
