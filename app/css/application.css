@@ -6,7 +6,7 @@ html {
 body {
   display: grid;
   place-content: center center;
-  height: 100dvh;
+  min-height: 100dvh;
   margin: 0;
   padding: 0;
 }
@@ -89,7 +89,7 @@ html[data-bs-theme="light"] bingo-square.marked-square {
 	min-height: 100%;
 	place-content: center center;
 
-	gap: 1vmin;
+	gap: 3vmin;
 }
 
 #bingo-card {
@@ -99,7 +99,7 @@ html[data-bs-theme="light"] bingo-square.marked-square {
   display: grid;
   gap: 0.5vmin;
 
-  --max-size: 70vmin;
+  --max-size: 85vmin;
 
   --top-color: orange;
   --middle-color: #888;
@@ -164,10 +164,10 @@ html[data-bs-theme="light"] bingo-square.marked-square {
     display: grid;
     text-align: center;
     place-content: center center;
-    font-size: 2vmin;
+    font-size: 2.35vmin;
 
     border-radius: 0.5vmin;
-    border: solid #000000aa 0.2vmin;
+    border: solid #00000055 0.3vmin;
     padding: 1vmin;
     overflow: hidden;
 	  cursor: pointer;
