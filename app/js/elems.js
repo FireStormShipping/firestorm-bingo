@@ -121,20 +121,11 @@ class BingoSquareElem extends UIElement {
     return `sensitivity-${this.data.sensitivity.description}`;
   }
 
-  get_force_col_break() {
-    if (this.force_col_break) {
-      this.force_col_break = false;
-      return '<div class="w-100 force-col-break"></div>';
-    } else {
-      return '';
-    }
-  }
-
   render() {
     return `
-    <${this.tag} class="is-bingo-square col px-0 h-100 d-flex border align-items-center justify-content-center ${this.get_marked_class()} ${this.get_sensitivity_class()}" data-id="bingo-square-num-${this.data.index}">
+    <${this.tag} class="is-bingo-square ${this.get_marked_class()} ${this.get_sensitivity_class()}" data-id="bingo-square-num-${this.data.index}">
       <div class="text-responsive text-center text-break">${this.data.text}</div>
-    </${this.tag}>${this.get_force_col_break()}`;
+    </${this.tag}>`;
   }
 }
 
