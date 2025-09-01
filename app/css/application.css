@@ -1,6 +1,5 @@
 html {
   overflow-y: scroll;
-  /* min-width: 445px; */
 }
 
 body {
@@ -28,16 +27,20 @@ div.navbar.navbar-dark {
 }
 
 /* do not allow svgs inside of buttons to capture mouse events (let them bubble up to the button itself) */
-button.capture > svg, button.capture > svg > path, button.capture > span, a.capture > svg, a.capture > svg > path {
+button.capture > svg,
+button.capture > svg > path,
+button.capture > span,
+a.capture > svg,
+a.capture > svg > path {
   pointer-events: none;
 }
 
 .pending-load {
-  /* filter: opacity(0); */
   display: none;
 }
 
-#content-missing-msg svg, #content-blocked-msg svg {
+#content-missing-msg svg,
+#content-blocked-msg svg {
   color: #a00;
   width: 50px;
   height: 50px;
@@ -60,7 +63,6 @@ button.capture > svg, button.capture > svg > path, button.capture > span, a.capt
   text-align: justify;
 }
 
-
 /* styling for squares when marked */
 html[data-bs-theme="dark"] bingo-square.marked-square {
   background-color: rgb(120, 30, 30);
@@ -74,39 +76,48 @@ html[data-bs-theme="light"] bingo-square.marked-square {
 
 /* The lizzer and coeurl backgrounds have yet to play nice. */
 .lizzer {
-  background: 100% 105% / 50% no-repeat url("../images/ren_lizzer_sploot.png")
+  background: 100% 105% / 50% no-repeat url("../images/ren_lizzer_sploot.png");
 }
 
 .coeurl {
-  background: 10% -60% / 50% no-repeat url("../images/ren_coeurl_cid.png")
+  background: 10% -60% / 50% no-repeat url("../images/ren_coeurl_cid.png");
 }
 
 /* TLB -- start */
 /* TLB -- start */
 /* TLB -- start */
 .coeurl {
-	display: grid;
-	min-height: 100%;
-	place-content: center center;
+  display: grid;
+  min-height: 100%;
+  place-content: center center;
 
-	gap: 3vmin;
+  gap: 3vmin;
+}
+
+#cid-header img {
+  position: relative;
+  height: 15vmin;
+  margin-block-end: -3.9vmin;
+  z-index: 2;
 }
 
 #bingo-card {
+  position: relative;
+  z-index: 1;
   border-radius: 1vmin;
   padding: 1.5vmin;
 
   display: grid;
   gap: 0.5vmin;
 
-  --max-size: 85vmin;
+  --max-size: 75vmin;
 
-  --top-color: orange;
-  --middle-color: #888;
-  --bottom-color: pink;
+  --top-color: #8b2820;
+  --middle-color: #48413f;
+  --bottom-color: #5e5178;
   --card-text: white;
-  --match-color: rgba(85, 0, 53, 0.8);
-  --match-text: white;
+  --match-color: #d78b35;
+  --match-text: #222;
 
   background-color: var(--middle-color);
 
@@ -164,26 +175,26 @@ html[data-bs-theme="light"] bingo-square.marked-square {
     display: grid;
     text-align: center;
     place-content: center center;
-    font-size: 2.35vmin;
+    font-size: 2vmin;
+    font-weight: 600;
 
     border-radius: 0.5vmin;
     border: solid #00000055 0.3vmin;
     padding: 1vmin;
     overflow: hidden;
-	  cursor: pointer;
+    cursor: pointer;
 
     color: var(--card-text);
     transition: none 150ms;
     transition-property: color, background;
-
 
     &.marked-square {
       color: var(--match-text);
       background: var(--match-color);
     }
 
-    &[data-id=bingo-square-num-12]{
-      font-size: 3vmin;
+    &[data-id="bingo-square-num-12"] {
+      font-size: 4vmin;
       font-weight: bold;
     }
   }
