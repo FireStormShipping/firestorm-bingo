@@ -254,9 +254,9 @@
       "sensitivity": "E"
     },
     {
-      "text": "Ears / Tail",
-      "weight": 2,
-      "sensitivity": "Q"
+      "text": "Non-human Ears / Tail",
+      "weight": 1,
+      "sensitivity": "S"
     },
     {
       "text": "69",
