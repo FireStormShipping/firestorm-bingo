@@ -94,11 +94,35 @@ html[data-bs-theme="light"] bingo-square.marked-square {
   gap: 3vmin;
 }
 
-#cid-header img {
+#cid-header {
   position: relative;
-  height: 15vmin;
-  margin-block-end: -3.9vmin;
   z-index: 2;
+  height: 11vmin;
+}
+
+#cid-header :nth-child(1) img {
+  position: absolute;
+  left: 0;
+  height: 15vmin;
+}
+
+#cid-header :nth-child(2) img {
+  position: absolute;
+  right: 0;
+  translate: 0 10%;
+  height: 15vmin;
+}
+
+@media screen and (min-width: 500px) {
+  #bingo-card {
+    --max-size: 75vmin;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #bingo-card {
+    --max-size: unset;
+  }
 }
 
 #bingo-card {
@@ -109,8 +133,6 @@ html[data-bs-theme="light"] bingo-square.marked-square {
 
   display: grid;
   gap: 0.5vmin;
-
-  --max-size: 75vmin;
 
   --top-color: #8b2820;
   --middle-color: #48413f;
