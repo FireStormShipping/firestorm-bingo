@@ -32,6 +32,13 @@
       ]
     },
     {
+      "text": "Unplanned Pregnancy",
+      "sensitivity": "Q",
+      "flags": [
+        "pregnancy"
+      ]
+    },
+    {
       "text": "Infertility",
       "sensitivity": "S",
       "flags": [
@@ -99,6 +106,18 @@
       "sensitivity": "S"
     },
     {
+      "text": "Omegas are Rare",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Alphas are Rare",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Betas are Rare",
+      "sensitivity": "S"
+    },
+    {
       "text": "Omegas are Slaves",
       "sensitivity": "Q",
       "flags": [
@@ -115,7 +134,7 @@
     },
     {
       "text": "Biological Dom/Sub",
-      "sensitivity": "Q"
+      "sensitivity": "S"
     },
     {
       "text": "Misuse of Dom Commands",
