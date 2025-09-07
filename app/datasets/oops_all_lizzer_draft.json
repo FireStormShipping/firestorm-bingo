@@ -8,6 +8,8 @@
       {"text": "Tag / Chase"},
       {"text": "Hiding"},
       {"text": "Napping"},
+      {"text": "Cuddling"},
+      {"text": "Bath time"},
       {"text": "Sunbathing"},
       {"text": "Swimming"},
       {"text": "Skittering"},
@@ -31,6 +33,17 @@
       {"text": "Chameleon"},
       {"text": "Eikon Abilities"},
       {"text": "New Friends"},
-      {"text": "Befriending Monsters"}
+      {"text": "Befriending Monsters"},
+      {"text": "Beast Tamer"},
+      {"text": "Sick Lizzer"},
+      {"text": "Sick Cid"},
+      {"text": "Cliiiive!"},
+      {"text": "Wall Thoughts"},
+      {"text": "On The Prowl"},
+      {"text": "New Favorite Toy"},
+      {"text": "New Favorite Place"},
+      {"text": "No Go Places"},
+      {"text": "Blep / Mlem"},
+      {"text": "Memories / Dreams"}
     ]
 }
