@@ -52,8 +52,11 @@
     },
     {
       "text": "Nurse or Doctor",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
+      ]
     },
     {
       "text": "Trusted Use",
@@ -92,6 +95,15 @@
       "text": "Masturbation",
       "weight": 3,
       "sensitivity": "E"
+    },
+    {
+      "text": "Captive / Captor",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay",
+        "consent issues"
+      ]
     },
     {
       "text": "Bathing or Onsen",
@@ -262,6 +274,15 @@
       "sensitivity": "E"
     },
     {
+      "text": "Prisioner / Jailer",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay",
+        "consent issues"
+      ]
+    },
+    {
       "text": "Oviposition",
       "weight": 4,
       "sensitivity": "E",
@@ -416,6 +437,14 @@
       "sensitivity": "S"
     },
     {
+      "text": "Lord Commander / Subordinate",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
+      ]
+    },
+    {
       "text": "The Pocky Game",
       "weight": 1,
       "sensitivity": "S"
@@ -540,6 +569,11 @@
       "sensitivity": "Q"
     },
     {
+      "text": "Uniforms",
+      "weight": 2,
+      "sensitivity": "Q"
+    },
+    {
       "text": "Non-Con",
       "weight": 4,
       "sensitivity": "E",
@@ -567,8 +601,8 @@
     },
     {
       "text": "Roleplay",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 2,
+      "sensitivity": "Q"
     },
     {
       "text": "Hurt / Comfort",
@@ -617,6 +651,14 @@
       "sensitivity": "Q",
       "flags": [
         "pregnancy"
+      ]
+    },
+    {
+      "text": "Maid / Master",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
       ]
     },
     {
@@ -681,6 +723,14 @@
       "sensitivity": "E",
       "flags": [
         "consent issues"
+      ]
+    },
+    {
+      "text": "Archduke / Lord Commander",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
       ]
     },
     {
@@ -758,6 +808,15 @@
       ]
     },
     {
+      "text": "Bearer / Master",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay",
+        "consent issues"
+      ]
+    },
+    {
       "text": "Cuddling",
       "weight": 1,
       "sensitivity": "S"
@@ -806,7 +865,8 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster"
+        "monster",
+        "death"
       ]
     },
     {
@@ -877,6 +937,14 @@
       "sensitivity": "S"
     },
     {
+      "text": "Teacher / Student",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
+      ]
+    },
+    {
       "text": "Lizzer",
       "weight": 1,
       "sensitivity": "S"
@@ -911,9 +979,12 @@
       "sensitivity": "Q"
     },
     {
-      "text": "Priest or Nun",
+      "text": "Priest / Nun",
       "weight": 3,
-      "sensitivity": "E"
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
+      ]
     },
     {
       "text": "Consensual Non-Consent",
@@ -947,6 +1018,14 @@
       "text": "The Veil",
       "weight": 3,
       "sensitivity": "E"
+    },
+    {
+      "text": "Professor / Dean",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
+      ]
     },
     {
       "text": "Beach Episode",
