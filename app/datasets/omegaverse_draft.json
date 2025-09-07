@@ -1,0 +1,192 @@
+{
+  "entries": [
+    {
+      "text": "Alpha/Alpha",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Omega/Omega",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Alpha/Omega",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Beta/Alpha",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Beta/Beta",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Beta/Omega",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Mpreg",
+      "sensitivity": "S",
+      "flags": [
+        "pregnancy"
+      ]
+    },
+    {
+      "text": "Infertility",
+      "sensitivity": "S",
+      "flags": [
+        "pregnancy"
+      ]
+    },
+    {
+      "text": "Role Reversal",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Dominant Alphas",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Submissive Alphas",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Dominant Omegas",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Submissive Omegas",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Uncommon Gender Frequency",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Protective Alpha",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Provider Alpha",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Alpha Instincts",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Omega Instincts",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Nesting",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Scent Marking",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Scent Kink",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Omegas are Prized",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Omegas are Disdained",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Omegas are Slaves",
+      "sensitivity": "Q",
+      "flags": [
+        "consent issues"
+      ]
+    },
+    {
+      "text": "Intersex Omegas",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Self-lubricating Holes",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Biological Dom/Sub",
+      "sensitivity": "Q"
+    },
+    {
+      "text": "Misuse of Dom Commands",
+      "sensitivity": "Q",
+      "flags": [
+        "consent issues"
+      ]
+    },
+    {
+      "text": "Scheduled Heat/Rut",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Unplanned Heat/Rut",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Synced Heat/Rut",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Heat/Rut Services",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Marathon Sex",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Heat Haze",
+      "sensitivity": "E"
+    },
+    {
+      "text": "No Heat Haze",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Alpha Sex Toys",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Omega Sex Toys",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Breeding Kink",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Knotting",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Knotting in Mouth",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Knotting in Hand",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Accidental Knotting",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Alphas/Omegas are Shifters",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Animal-like Genitalia",
+      "sensitivity": "E"
+    }
+  ]
+}
