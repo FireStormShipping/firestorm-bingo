@@ -5,7 +5,8 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "consent issues"
+        "consent issues",
+        "\"extras\" / poly"
       ]
     },
     {
@@ -31,7 +32,7 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster"
+        "eikon"
       ]
     },
     {
@@ -57,7 +58,10 @@
     {
       "text": "Trusted Use",
       "weight": 3,
-      "sensitivity": "E"
+      "sensitivity": "E",
+      "flags": [
+        "\"extras\" / poly"
+      ]
     },
     {
       "text": "Overstim",
@@ -318,7 +322,8 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "consent issues"
+        "consent issues",
+        "\"extras\" / poly"
       ]
     },
     {
@@ -329,7 +334,10 @@
     {
       "text": "Threesome",
       "weight": 3,
-      "sensitivity": "E"
+      "sensitivity": "E",
+      "flags": [
+        "\"extras\" / poly"
+      ]
     },
     {
       "text": "Bondage",
@@ -730,7 +738,7 @@
     {
       "text": "One Bed",
       "weight": 3,
-      "sensitivity": "E"
+      "sensitivity": "Q"
     },
     {
       "text": "Centaur",
@@ -880,7 +888,7 @@
       "sensitivity": "Q"
     },
     {
-      "text": "Ears / Tail",
+      "text": "Ears / Tail (Kemonomimi)",
       "weight": 2,
       "sensitivity": "Q"
     },
