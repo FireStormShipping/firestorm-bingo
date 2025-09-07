@@ -21,7 +21,10 @@
     {
       "text": "Eikonic Instincts",
       "weight": 1,
-      "sensitivity": "S"
+      "sensitivity": "S",
+      "flags": [
+        "eikon"
+      ]
     },
     {
       "text": "Tail Sex",
@@ -268,7 +271,10 @@
     {
       "text": "Eikonic Powers",
       "weight": 1,
-      "sensitivity": "S"
+      "sensitivity": "S",
+      "flags": [
+        "eikon"
+      ]
     },
     {
       "text": "Proposal",
@@ -288,7 +294,7 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster"
+        "eikon"
       ]
     },
     {
@@ -485,7 +491,7 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster"
+        "eikon"
       ]
     },
     {
@@ -696,7 +702,10 @@
     {
       "text": "Different Eikon",
       "weight": 1,
-      "sensitivity": "S"
+      "sensitivity": "S",
+      "flags": [
+        "eikon"
+      ]
     },
     {
       "text": "Holding Hands",
@@ -772,7 +781,7 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster"
+        "eikon"
       ]
     },
     {
