@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "text": "Sugar Baby / Sugar Daddy",
+      "weight": 2,
+      "sensitivity": "Q"
+    },
+    {
       "text": "Cuckolding / Infidelity",
       "weight": 4,
       "sensitivity": "E",
@@ -52,8 +57,11 @@
     },
     {
       "text": "Nurse or Doctor",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
+      ]
     },
     {
       "text": "Trusted Use",
@@ -94,6 +102,15 @@
       "sensitivity": "E"
     },
     {
+      "text": "Captive / Captor",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay",
+        "consent issues"
+      ]
+    },
+    {
       "text": "Bathing or Onsen",
       "weight": 2,
       "sensitivity": "Q"
@@ -112,7 +129,12 @@
       ]
     },
     {
-      "text": "Feral Play",
+      "text": "Feral",
+      "weight": 3,
+      "sensitivity": "E"
+    },
+    {
+      "text": "Primal Play",
       "weight": 3,
       "sensitivity": "E"
     },
@@ -226,7 +248,8 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster"
+        "monster",
+        "\"extras\" / poly"
       ]
     },
     {
@@ -256,6 +279,15 @@
       "sensitivity": "E"
     },
     {
+      "text": "Prisioner / Jailer",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay",
+        "consent issues"
+      ]
+    },
+    {
       "text": "Oviposition",
       "weight": 4,
       "sensitivity": "E",
@@ -269,7 +301,8 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster"
+        "monster",
+        "\"extras\" / poly"
       ]
     },
     {
@@ -359,7 +392,8 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster"
+        "monster",
+        "\"extras\" / poly"
       ]
     },
     {
@@ -393,14 +427,22 @@
       "sensitivity": "S"
     },
     {
-      "text": "Consensual Somnophilia",
+      "text": "Sleepy / Wake-up Sex",
       "weight": 3,
       "sensitivity": "E"
     },
     {
-      "text": "Kidfic",
+      "text": "Midfic",
       "weight": 1,
       "sensitivity": "S"
+    },
+    {
+      "text": "Lord Commander / Subordinate",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
+      ]
     },
     {
       "text": "The Pocky Game",
@@ -517,11 +559,17 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster"
+        "monster",
+        "\"extras\" / poly"
       ]
     },
     {
       "text": "Dressing Each Other",
+      "weight": 2,
+      "sensitivity": "Q"
+    },
+    {
+      "text": "Uniforms",
       "weight": 2,
       "sensitivity": "Q"
     },
@@ -553,8 +601,8 @@
     },
     {
       "text": "Roleplay",
-      "weight": 3,
-      "sensitivity": "E"
+      "weight": 2,
+      "sensitivity": "Q"
     },
     {
       "text": "Hurt / Comfort",
@@ -603,6 +651,14 @@
       "sensitivity": "Q",
       "flags": [
         "pregnancy"
+      ]
+    },
+    {
+      "text": "Maid / Master",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
       ]
     },
     {
@@ -667,6 +723,14 @@
       "sensitivity": "E",
       "flags": [
         "consent issues"
+      ]
+    },
+    {
+      "text": "Archduke / Lord Commander",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
       ]
     },
     {
@@ -744,6 +808,15 @@
       ]
     },
     {
+      "text": "Bearer / Master",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay",
+        "consent issues"
+      ]
+    },
+    {
       "text": "Cuddling",
       "weight": 1,
       "sensitivity": "S"
@@ -792,7 +865,8 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster"
+        "monster",
+        "death"
       ]
     },
     {
@@ -858,14 +932,31 @@
       "sensitivity": "E"
     },
     {
-      "text": "Watching a Movie",
+      "text": "Watching a Movie / Play",
       "weight": 1,
       "sensitivity": "S"
+    },
+    {
+      "text": "Teacher / Student",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
+      ]
     },
     {
       "text": "Lizzer",
       "weight": 1,
       "sensitivity": "S"
+    },
+    {
+      "text": "Drunk Sex",
+      "weight": 2,
+      "sensitivity": "E",
+      "flags": [
+        "altered state of mind",
+        "consent issues"
+      ]
     },
     {
       "text": "Shotgunning",
@@ -888,9 +979,12 @@
       "sensitivity": "Q"
     },
     {
-      "text": "Priest or Nun",
+      "text": "Priest / Nun",
       "weight": 3,
-      "sensitivity": "E"
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
+      ]
     },
     {
       "text": "Consensual Non-Consent",
@@ -926,6 +1020,14 @@
       "sensitivity": "E"
     },
     {
+      "text": "Professor / Dean",
+      "weight": 2,
+      "sensitivity": "Q",
+      "flags": [
+        "specific roleplay"
+      ]
+    },
+    {
       "text": "Beach Episode",
       "weight": 1,
       "sensitivity": "S"
@@ -935,7 +1037,9 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "consent issues"
+        "consent issues",
+        "\"extras\" / poly",
+        "altered state of mind"
       ]
     },
     {
