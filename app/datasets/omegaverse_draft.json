@@ -66,8 +66,12 @@
       "sensitivity": "S"
     },
     {
-      "text": "Uncommon Gender Frequency",
-      "sensitivity": "S"
+      "text": "Secondary Gender Dysphoria",
+      "sensitivity": "Q"
+    },
+    {
+      "text": "Secondary Sexism",
+      "sensitivity": "Q"
     },
     {
       "text": "Protective Alpha",
@@ -78,8 +82,15 @@
       "sensitivity": "S"
     },
     {
-      "text": "Phermones",
+      "text": "Pheromones",
       "sensitivity": "S"
+    },
+    {
+      "text": "Drunk on Pheromones",
+      "sensitivity": "E",
+      "flags": [
+        "consent issues"
+      ]
     },
     {
       "text": "True Mate",
@@ -201,7 +212,10 @@
     },
     {
       "text": "Heat Haze",
-      "sensitivity": "E"
+      "sensitivity": "E",
+      "flags": [
+        "consent issues"
+      ]
     },
     {
       "text": "No Heat Haze",
@@ -237,7 +251,18 @@
     },
     {
       "text": "Alphas/Omegas are Shifters",
-      "sensitivity": "E"
+      "sensitivity": "S"
+    },
+    {
+      "text": "Accidental Mating Bite",
+      "sensitivity": "Q",
+      "flags": [
+        "consent issues"
+      ]
+    },
+    {
+      "text": "Enemies to Soulbond",
+      "sensitivity": "S"
     },
     {
       "text": "Animal-like Genitalia",
