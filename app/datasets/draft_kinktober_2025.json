@@ -865,8 +865,7 @@
       "weight": 4,
       "sensitivity": "E",
       "flags": [
-        "monster",
-        "death"
+        "monster"
       ]
     },
     {
