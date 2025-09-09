@@ -25,6 +25,20 @@
       "sensitivity": "S"
     },
     {
+      "text": "Alpha/Beta/Omega",
+      "sensitivity": "S",
+      "flags": [
+        "\"extras\" / poly"
+      ]
+    },
+    {
+      "text": "Any Polycule",
+      "sensitivity": "S",
+      "flags": [
+        "\"extras\" / poly"
+      ]
+    },
+    {
       "text": "Mpreg",
       "sensitivity": "S",
       "flags": [
@@ -66,8 +80,15 @@
       "sensitivity": "S"
     },
     {
-      "text": "Secondary Gender Dysphoria",
+      "text": "Secondary Gender Queer",
       "sensitivity": "Q"
+    },
+    {
+      "text": "Eikon-specific Secondary Gender",
+      "sensitivity": "S",
+      "flags": [
+        "eikon"
+      ]
     },
     {
       "text": "Secondary Sexism",
@@ -93,7 +114,7 @@
       ]
     },
     {
-      "text": "True Mate",
+      "text": "True/Soul Mates",
       "sensitivity": "S"
     },
     {
@@ -109,7 +130,31 @@
       "sensitivity": "S"
     },
     {
-      "text": "Mental Communication",
+      "text": "Telepathic Bond",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Empathetic Bond",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Delayed Designation",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Unexpected Designation",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Overwhelming Senses",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Enhanced Senses",
+      "sensitivity": "S"
+    },
+    {
+      "text": "No Sense of Smell",
       "sensitivity": "S"
     },
     {
