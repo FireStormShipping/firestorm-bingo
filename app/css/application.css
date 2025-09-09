@@ -74,15 +74,6 @@ html[data-bs-theme="light"] bingo-square.marked-square {
   color: white;
 }
 
-/* The lizzer and coeurl backgrounds have yet to play nice. */
-.lizzer {
-  background: 100% 105% / 50% no-repeat url("../images/ren_lizzer_sploot.png");
-}
-
-.coeurl {
-  background: 10% -60% / 50% no-repeat url("../images/ren_coeurl_cid.png");
-}
-
 /* TLB -- start */
 /* TLB -- start */
 /* TLB -- start */
@@ -94,19 +85,19 @@ html[data-bs-theme="light"] bingo-square.marked-square {
   gap: 3vmin;
 }
 
-#cid-header {
+#art-header {
   position: relative;
   z-index: 2;
   height: 11vmin;
 }
 
-#cid-header :nth-child(1) img {
+#art-header :nth-child(1) img {
   position: absolute;
   left: 0;
   height: 15vmin;
 }
 
-#cid-header :nth-child(2) img {
+#art-header :nth-child(2) img {
   position: absolute;
   right: 0;
   translate: 0 10%;

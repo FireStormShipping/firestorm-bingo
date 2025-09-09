@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8" />
-    <title>bingo</title>
+    <title>Bingo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <meta name="description" content=""> -->
     <!-- <meta name="author" content=""> -->
@@ -31,74 +31,65 @@
         </div>
       </div>
       <div id="wrapper" class="container px-3 pending-load">
+        <button
+          id="theme-toggle"
+          class="btn btn-secondary capture px-3"
+          type="button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-sun-fill theme-icon-light"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-moon-stars-fill theme-icon-dark"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+            />
+            <path
+              d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"
+            />
+          </svg>
+        </button>
         <div id="prompt-form">
           <div class="pt-5 pb-5">
-            <button
-              id="theme-toggle"
-              class="btn btn-secondary capture px-3"
-              type="button"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-sun-fill theme-icon-light"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-moon-stars-fill theme-icon-dark"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
-                />
-                <path
-                  d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"
-                />
-              </svg>
-            </button>
-            <h3 class="mb-3 display-2">FireStorm Prompt Bingo Generator</h3>
+            <h3 class="mb-3 display-3">FireStorm Prompt Bingo Generator</h3>
             <div class="px-2 text-justify">
-              <p>
-                Some creators may choose not to engage with certain types of
-                content. We have designed an "opt-in" topic system to facilitate
-                this. The topics align roughly with content we would put under
-                spoilers in Discord.
-              </p>
-              <p>
-                The "sensitivity threshold" is akin to ratings, and it does
-                function as a threshold. That is, if you choose Explicit, your
-                prompts could include Safe, Questionable, and Explicit. This
-                means that your card may not be entirely Explicit, but you
-                should get more Explicit prompts than not.
-              </p>
-              <p>
-                To "save" a card (including its marked squares), click the
-                Export button. You can import that code later to "load" your
-                card, or a friend's card if they share their code with you.
+              <p class="lead">
+                Welcome to the Firestorm Prompt Bingo Generator!<br>
+                Below you will find a couple of dropdowns and selections you can make.
+                We're tried to make this as adjustable as possible so that you can make
+                a board you will be happy with, whatever your spice and kink tolerance.
+                You won't always like every topic on your board, and that's fine!
+                The goal is to get enough there that you can play your way.
+                (Don't worry, we'll explain elsewhere how to play Bingo for those who need a refresher.)
               </p>
             </div>
           </div>
           <div class="py-2">
-            <h3 class="mb-3 mx-2">prompt settings</h3>
+            <h3 class="mb-3 mx-2">Prompt Settings</h3>
             <form class="needs-validation" novalidate>
               <div class="row">
                 <div class="col-12 col-lg-6 pt-2">
                   <div class="container">
                     <div class="row">
                       <div class="mb-3">
-                        <label for="dataset-selection" class="form-label"
-                          >Prompt pool</label
-                        >
+                        <label for="dataset-selection" class="form-label">
+                          Prompt Pool
+                        </label>
                         <select
                           class="form-select"
                           id="dataset-selection"
@@ -110,8 +101,9 @@
                         <label
                           for="sensitivity-limit-selection"
                           class="form-label"
-                          >Sensitivity threshold</label
                         >
+                          Sensitivity Threshold
+                        </label>
                         <select
                           class="form-select"
                           id="sensitivity-limit-selection"
@@ -124,10 +116,9 @@
                   <div class="container">
                     <div class="row">
                       <div class="mb-3">
-                        <label for="flag-selection" class="form-label"
-                          >Choose Permitted Topics (CMD/CTRL+Click for
-                          multiple)</label
-                        >
+                        <label for="flag-selection" class="form-label">
+                          Choose Permitted Topics (CMD/CTRL+Click for multiple)
+                        </label>
                         <select
                           class="form-select"
                           id="flag-selection"
@@ -146,7 +137,7 @@
                     type="submit"
                     id="submit"
                   >
-                    build my bingo card
+                    Build My Bingo Card
                   </button>
                 </div>
               </div>
@@ -160,9 +151,9 @@
               <div class="row px-2">
                 <div class="col-lg-8 offset-lg-2 px-3">
                   <div class="mb-3">
-                    <label for="import-card-code" class="form-label"
-                      >Saved bingo card code</label
-                    >
+                    <label for="import-card-code" class="form-label">
+                      Saved Bingo Card Code
+                    </label>
                     <textarea
                       class="form-control"
                       id="import-card-code"
@@ -178,17 +169,54 @@
                     type="submit"
                     id="import"
                   >
-                    import a previous card
+                    Import A Previous Card
                   </button>
                 </div>
               </div>
             </form>
           </div>
+          <div class="py-2 text-justify">
+            <h3>How to Make Your Card:</h3>
+            <h4>Pick Your Prompt Pool</h4>
+            <p>
+              This is the full list of prompts you'll be working with. Our latest event
+              is Kinktober, but you're welcome to choose whichever you like. The event
+              is just an excuse to be creative!
+            </p>
+            <h4>Set Your Sensitivity Threshold</h4>
+            <p>
+              This changes the spiciness of your prompts, basically the prompt's rating.
+              The three options available are Safe, Questionable, and Explicit.
+              If you pick Safe, only SFW prompts will appear. If you go up to Explicit,
+              then anything from Safe, Questionable, and Explicit could appear on your card.
+            </p>
+            <h4>Choose Your Permitted Topics</h4>
+            <p>
+              These are categories of prompts that some people want to avoid for
+              one reason or another. We use an "opt in" system so you can choose
+              whatever fits your interests best. We don't judge!
+            </p>
+            <h4>Build Your Card!</h4>
+            <p>
+              From there, just hit 'Build My Bingo Card' and see what comes up!
+              If you don't like your card, you can click the button beneath it
+              that will allow you to generate another card. It will save the
+              choices you made, so you can quickly generate from the same prompt
+              pool or go back and adjust your selections until you build something
+              that works for you.
+            </p>
+            <h4>Save and Load</h4>
+            <p>
+              To "save" a card (including its marked squares), click the
+              Export button. You can import that code later to "load" your
+              card, or a friend's card if they share their code with you.
+            </p>
+          </div>
         </div>
 
         <div id="prompt-result">
           <div class="container coeurl">
-            <div id="cid-header">
+            <div id="art-header">
               <picture>
                 <img src="./images/ren_coeurl_cid.png" />
               </picture>
@@ -216,7 +244,7 @@
               </div>
               <div id="bingo-frame"></div>
             </div>
-            <div class="lizzer">
+            <div>
               <div class="input-group px-0">
                 <button class="btn btn-secondary" type="button" id="export">
                   Export
@@ -256,9 +284,25 @@
                 type="submit"
                 id="rebuild"
               >
-                build another
+                Build Another
               </button>
             </div>
+          </div>
+          <div>
+            <h4>How to play Bingo</h4>
+            <p class="lead">
+              In your medium of choice, create stuff that vibes with the boxes
+              on your bingo card. When your creation is done, you get to mark off
+              a square (or more, if you used multiple prompts in the same creation).
+            </p>
+            <h4>How to Win</h4>
+            <p>
+              If you mark off all the squares in a row, column, or diagonal, then you win!
+              There are other options too, such as marking off a 2x2, 3x3, 4x4, or 5x5 area
+              (also known as a blackout). Whatever version of the game you want to play works!
+              Some people will even try to incorporate an entire row into one creative work;
+              that is also winning. Set the conditions that you will enjoy and go create!
+            </p>
           </div>
         </div>
       </div>
