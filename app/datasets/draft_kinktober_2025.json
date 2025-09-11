@@ -94,7 +94,10 @@
     {
       "text": "Adult Age Play",
       "weight": 3,
-      "sensitivity": "E"
+      "sensitivity": "E",
+      "flags": [
+        "specific roleplay"
+      ]
     },
     {
       "text": "Masturbation",
