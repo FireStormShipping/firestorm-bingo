@@ -1,6 +1,7 @@
 import { AppBaseUI } from './base.js';
 
 import { Card } from '../data/card.js';
+import { Cache } from '../data/cache.js';
 import { Sensitivity } from '../data/enums.js';
 
 import {
@@ -31,6 +32,7 @@ class CardUI extends AppBaseUI {
 
     this.load_config()
       .then(this.load_form.bind(this))
+      .then(this.check_cached_card.bind(this))
       .then(this.bind_event_handlers.bind(this))
       .catch(err => {
         this.ui_toast('danger', err);
@@ -62,6 +64,21 @@ class CardUI extends AppBaseUI {
 
     this.toggle_loading_spinner(false);
     this.toggle_show_content(true);
+  }
+
+  async check_cached_card() {
+    const cachedCard = Cache.getCurrentCard();
+    if (cachedCard) {
+      try {
+        this.card = new Card();
+        this.card.deserialize(cachedCard);
+        this.render();
+        return;
+      } catch(err) {
+        console.error('Failed to load cached card:', err);
+        Cache.clearCurrentCard();
+      }
+    }
   }
 
   async import() {
@@ -115,11 +132,25 @@ class CardUI extends AppBaseUI {
       document.querySelector('button#copy-export').classList.add('collapse');
     }
 
+    // Save current card to cache
+    this.save_card_to_cache();
+
     this.toggle_prompt_result(true);
     this.toggle_prompt_form(false);
 
     this.toggle_loading_spinner(false);
     this.toggle_show_content(true);
+  }
+
+  save_card_to_cache() {
+    if (this.card && this.card.spaces) {
+      try {
+        const cardToken = this.card.serialize();
+        Cache.setCurrentCard(cardToken);
+      } catch(err) {
+        console.error('Failed to cache card:', err);
+      }
+    }
   }
 
   reload() {
@@ -202,6 +233,7 @@ class CardUI extends AppBaseUI {
     });
 
     document.querySelector('button#rebuild').addEventListener('click', (ev) => {
+      Cache.clearCurrentCard();
       this.toggle_prompt_form(true);
       this.toggle_prompt_result(false);
 
@@ -239,6 +271,8 @@ class CardUI extends AppBaseUI {
         target.classList.remove('marked-square');
       }
 
+      // Save updated card state to cache
+      this.save_card_to_cache();
       this.clearExport();
 
       ev.preventDefault();

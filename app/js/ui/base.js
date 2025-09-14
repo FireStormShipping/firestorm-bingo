@@ -1,3 +1,5 @@
+import { Cache } from '../data/cache.js';
+
 class AppBaseUI {
   constructor() {
     this.dataset_name = '';
@@ -105,11 +107,20 @@ class AppBaseUI {
 
   set_theme(newTheme) {
     if(newTheme !== 'dark' && newTheme !== 'light') {
-      newTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      // Check cache first, then system preference
+      const savedTheme = Cache.getTheme();
+      if (savedTheme && (savedTheme === 'dark' || savedTheme === 'light')) {
+        newTheme = savedTheme;
+      } else {
+        newTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
     }
 
     document.documentElement.setAttribute('data-bs-theme', newTheme);
     this.update_theme_icon(newTheme);
+
+    // Save theme preference to cache
+    Cache.setTheme(newTheme);
   }
 
   toggle_theme() {
