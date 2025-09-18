@@ -124,7 +124,7 @@ class BingoSquareElem extends UIElement {
   render() {
     return `
     <${this.tag} class="is-bingo-square ${this.get_marked_class()} ${this.get_sensitivity_class()}" data-id="bingo-square-num-${this.data.index}">
-      <div class="text-responsive text-center text-break">${this.data.text}</div>
+      <div class="text-responsive text-center text-break bingo-square-text">${this.data.text}</div>
     </${this.tag}>`;
   }
 }

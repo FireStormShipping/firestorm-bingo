@@ -206,6 +206,17 @@ html[data-bs-theme="light"] bingo-square.marked-square {
       background: var(--match-color);
     }
 
+    &.long-press-active {
+      background-color: darkred;
+      transform-origin: center;
+      transform: scale(1.05);
+    }
+
+    & > .bingo-square-text {
+      /* prevent context menu from appearing when long-pressing on touch screens */
+      user-select: none;
+    }
+
     &[data-id="bingo-square-num-12"] {
       font-size: 4vmin;
       font-weight: bold;
