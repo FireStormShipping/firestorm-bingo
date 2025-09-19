@@ -80,6 +80,7 @@ class Card {
     Object.seal(this.spaces);
 
     this.pool = new Pool(this.sensitivity_limit, this.banned_flags, this.dataset);
+    this.pool.generateNew();
     const start = this.pool.spaces.slice(0, 12);
     const freespace = new Entry('FREE', [], 1, 'S', true);
     const end = this.pool.spaces.slice(11);
@@ -111,7 +112,7 @@ class Card {
     return btoa(payload);
   }
 
-  deserialize(payload) {
+  async deserialize(payload) {
     payload = atob(payload);
 
     const saved_card = JSON.parse(payload);
@@ -127,6 +128,49 @@ class Card {
       this.spaces[i] = Entry.deserialize(space);
       this.spaces[i].index = i;
     });
+
+    // Rebuild the pool for reroll functionality
+    await this.load_dataset();
+    this.rebuildPool();
+  }
+
+  // Rebuild pool from given card state
+  rebuildPool() {
+    this.pool = new Pool(this.sensitivity_limit, this.banned_flags, this.dataset);
+    this.pool.regenerateFromCardData(this.spaces);
+  }
+
+  // Reroll a single square at the given card index
+  rerollSquare(cardIndex) {
+    if (!this.pool) {
+      throw new Error('Card not built yet');
+    }
+
+    if (cardIndex < 0 || cardIndex >= 25) {
+      throw new Error('Invalid card index');
+    }
+
+    if (cardIndex === 12) {
+      throw new Error('Cannot reroll FREE space');
+    }
+
+    // Map card index to pool index
+    let poolIndex;
+    if (cardIndex < 12) {
+      poolIndex = cardIndex; // Card 0-11 -> Pool 0-11
+    } else if (cardIndex > 12) {
+      poolIndex = cardIndex - 1; // Card 13-24 -> Pool 12-23
+    }
+
+    try {
+      const newEntry = this.pool.rerollPoolSpace(poolIndex);
+      this.spaces[cardIndex] = newEntry;
+      this.spaces[cardIndex].index = cardIndex;
+
+      return newEntry;
+    } catch (error) {
+      throw new Error('No alternative entries available for reroll');
+    }
   }
 }
 

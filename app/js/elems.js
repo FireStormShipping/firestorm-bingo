@@ -79,7 +79,7 @@ class SensitivityElem extends UIElement {
   }
 
   render() {
-    return `<${this.tag} data-id="sensitivity-${this.data}">${this.data}</${this.tag}`;
+    return `<${this.tag} data-id="sensitivity-${this.data}">${this.data}</${this.tag}>`;
   }
 }
 
@@ -121,10 +121,10 @@ class BingoSquareElem extends UIElement {
     return `sensitivity-${this.data.sensitivity.description}`;
   }
 
-  render() {
+  render(long_press_enabled = false) {
     return `
     <${this.tag} class="is-bingo-square ${this.get_marked_class()} ${this.get_sensitivity_class()}" data-id="bingo-square-num-${this.data.index}">
-      <div class="text-responsive text-center text-break">${this.data.text}</div>
+      <div class="text-responsive text-center text-break bingo-square-text ${long_press_enabled ? 'bingo-square-text-unselectable' : 'bingo-square-text-selectable'}">${this.data.text}</div>
     </${this.tag}>`;
   }
 }

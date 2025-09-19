@@ -29,6 +29,8 @@ class CardUI extends AppBaseUI {
     this.flag_opt_elem = new FlagElem(this, this.flag_opt_hoist);
     this.bingo_square_elem = new BingoSquareElem(this, this.bingo_hoist);
 
+    this.long_press_enabled = false;
+
     this.load_config()
       .then(this.load_form.bind(this))
       .then(this.bind_event_handlers.bind(this))
@@ -68,7 +70,7 @@ class CardUI extends AppBaseUI {
     this.card = new Card();
 
     try {
-      this.card.deserialize(this.import_hoist.value);
+      await this.card.deserialize(this.import_hoist.value);
     } catch(err) {
       console.error(err);
       this.ui_toast('danger', 'Import failed');
@@ -106,7 +108,7 @@ class CardUI extends AppBaseUI {
       if ((i++ % 5) === 0) {
         this.bingo_square_elem.set_force_col_break();
       }
-      this.bingo_square_elem.display();
+      this.bingo_square_elem.display(this.long_press_enabled);
     });
 
     this.clearExport();
@@ -120,6 +122,27 @@ class CardUI extends AppBaseUI {
 
     this.toggle_loading_spinner(false);
     this.toggle_show_content(true);
+  }
+
+  handleReroll(target) {
+    const id = parseInt(target.getAttribute('data-id').split('-').slice(-1)[0]);
+
+    try {
+      const newEntry = this.card.rerollSquare(id);
+
+      this.bingo_square_elem.update(newEntry);
+      this.bingo_square_elem.display(this.long_press_enabled);
+
+      this.clearExport();
+
+      target.classList.remove('long-press-active');
+      this.ui_toast('success', 'Square rerolled!');
+
+    } catch (error) {
+      console.error('Reroll failed:', error);
+      target.classList.remove('long-press-active');
+      this.ui_toast('warning', error.message);
+    }
   }
 
   reload() {
@@ -142,6 +165,27 @@ class CardUI extends AppBaseUI {
       document.querySelector('#prompt-result').classList.remove('collapse');
     } else {
       document.querySelector('#prompt-result').classList.add('collapse');
+    }
+  }
+
+  toggleEnableRerollButton(ev) {
+    const rerollButton = ev.target;
+    if (rerollButton.innerText.includes('Enable Re-roll')) {
+      rerollButton.innerText = 'Disable Re-roll';
+      this.ui_toast('info', 'Re-roll enabled! Long press a square to re-roll it.');
+      this.long_press_enabled = true;
+      document.querySelectorAll("#bingo-frame>bingo-square>.bingo-square-text").forEach(el => {
+        el.classList.remove('bingo-square-text-selectable');
+        el.classList.add('bingo-square-text-unselectable');
+      })
+    } else {
+      rerollButton.innerText = 'Enable Re-roll';
+      this.ui_toast('info', 'Re-roll disabled.');
+      this.long_press_enabled = false;
+      document.querySelectorAll("#bingo-frame>bingo-square>.bingo-square-text").forEach(el => {
+        el.classList.remove('bingo-square-text-unselectable');
+        el.classList.add('bingo-square-text-selectable');
+      })
     }
   }
 
@@ -201,6 +245,11 @@ class CardUI extends AppBaseUI {
         });
     });
 
+    document.querySelector('button#enable-reroll').addEventListener('click', (ev) => {
+      this.toggleEnableRerollButton(ev);
+      ev.preventDefault();
+    });
+
     document.querySelector('button#rebuild').addEventListener('click', (ev) => {
       this.toggle_prompt_form(true);
       this.toggle_prompt_result(false);
@@ -220,16 +269,56 @@ class CardUI extends AppBaseUI {
       ev.preventDefault();
     });
 
-    this.bingo_hoist.addEventListener('click', (ev) => {
-      let target = null;
+    // Reroll card if long press reaches 1s
+    let longPressTimer = null;
+
+    const getBingoSquareTarget = (ev) => {
       if (ev.target.classList.contains('is-bingo-square')) {
-        target = ev.target;
+        return ev.target;
       } else if (ev.target.parentNode.classList.contains('is-bingo-square')) {
-        target = ev.target.parentNode;
-      } else {
-        return;
+        return ev.target.parentNode;
+      }
+      return null;
+    };
+
+    // Handle long press on mousedown/touchstart
+    const handleLongPress = (ev) => {
+      if (!this.long_press_enabled) return;
+      const target = getBingoSquareTarget(ev);
+      if (!target) return;
+
+      target.classList.add('long-press-active');
+
+      longPressTimer = setTimeout(() => {
+        this.handleReroll(target);
+      }, 1000);
+    };
+
+    this.bingo_hoist.addEventListener('mousedown', handleLongPress);
+    this.bingo_hoist.addEventListener('touchstart', handleLongPress, { passive: true });
+
+    // Cancel long press on mouseup/mouseout/touchend/mouseleave
+    const cancelLongPress = (ev) => {
+      if (longPressTimer) {
+        clearTimeout(longPressTimer);
+        longPressTimer = null;
       }
 
+      const target = getBingoSquareTarget(ev);
+      if (target) {
+        target.classList.remove('long-press-active');
+      }
+    };
+
+    this.bingo_hoist.addEventListener('mouseup', cancelLongPress);
+    this.bingo_hoist.addEventListener('mouseout', cancelLongPress);
+    this.bingo_hoist.addEventListener('touchend', cancelLongPress);
+    this.bingo_hoist.addEventListener('mouseleave', cancelLongPress);
+
+    // Regular click handler: Toggle square completion
+    this.bingo_hoist.addEventListener('click', (ev) => {
+      const target = getBingoSquareTarget(ev);
+      if (!target) return;
       const id = target.getAttribute('data-id').split('-').slice(-1);
       const marked = this.card.spaces[id].mark();
 
