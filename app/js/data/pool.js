@@ -83,8 +83,7 @@ class Pool {
     });
 
     // For each card space (excluding FREE), find matching entry in contents and mark as used
-    let poolIndex = 0;
-    for (let cardIndex = 0; cardIndex < 25; cardIndex++) {
+    for (let cardIndex = 0, poolIndex = 0; cardIndex < 25; cardIndex++) {
       if (cardIndex === 12) continue; // Skip FREE space
 
       const cardEntry = cardSpaces[cardIndex];
