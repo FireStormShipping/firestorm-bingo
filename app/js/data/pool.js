@@ -66,8 +66,7 @@ class Pool {
   generateNew() {
     this.seed = this.genSeed();
 
-    let i = 0;
-    for(let slot = 0; slot < 24; slot++) {
+    for(let slot = 0, i = 0; slot < 24; slot++) {
       const initial_offset = (this.seed[slot] + i) % this.contents.length;
       const offset = (initial_offset + this.getNextValidReservation(initial_offset)) % (this.contents.length - 1);
       this.spaces[slot] = this.contents[offset].entry;
