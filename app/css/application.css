@@ -212,8 +212,11 @@ html[data-bs-theme="light"] bingo-square.marked-square {
       transform: scale(1.05);
     }
 
-    & > .bingo-square-text {
-      /* prevent context menu from appearing when long-pressing on touch screens */
+    & > .bingo-square-text-selectable {
+      user-select: auto;
+    }
+
+    & > .bingo-square-text-unselectable {
       user-select: none;
     }
 

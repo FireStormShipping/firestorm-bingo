@@ -29,6 +29,8 @@ class CardUI extends AppBaseUI {
     this.flag_opt_elem = new FlagElem(this, this.flag_opt_hoist);
     this.bingo_square_elem = new BingoSquareElem(this, this.bingo_hoist);
 
+    this.long_press_enabled = false;
+
     this.load_config()
       .then(this.load_form.bind(this))
       .then(this.bind_event_handlers.bind(this))
@@ -106,7 +108,7 @@ class CardUI extends AppBaseUI {
       if ((i++ % 5) === 0) {
         this.bingo_square_elem.set_force_col_break();
       }
-      this.bingo_square_elem.display();
+      this.bingo_square_elem.display(this.long_press_enabled);
     });
 
     this.clearExport();
@@ -129,7 +131,7 @@ class CardUI extends AppBaseUI {
       const newEntry = this.card.rerollSquare(id);
 
       this.bingo_square_elem.update(newEntry);
-      this.bingo_square_elem.display();
+      this.bingo_square_elem.display(this.long_press_enabled);
 
       this.clearExport();
 
@@ -163,6 +165,27 @@ class CardUI extends AppBaseUI {
       document.querySelector('#prompt-result').classList.remove('collapse');
     } else {
       document.querySelector('#prompt-result').classList.add('collapse');
+    }
+  }
+
+  toggleEnableRerollButton(ev) {
+    const rerollButton = ev.target;
+    if (rerollButton.innerText.includes('Enable Re-roll')) {
+      rerollButton.innerText = 'Disable Re-roll';
+      this.ui_toast('info', 'Re-roll enabled! Long press a square to re-roll it.');
+      this.long_press_enabled = true;
+      document.querySelectorAll("#bingo-frame>bingo-square>.bingo-square-text").forEach(el => {
+        el.classList.remove('bingo-square-text-selectable');
+        el.classList.add('bingo-square-text-unselectable');
+      })
+    } else {
+      rerollButton.innerText = 'Enable Re-roll';
+      this.ui_toast('info', 'Re-roll disabled.');
+      this.long_press_enabled = false;
+      document.querySelectorAll("#bingo-frame>bingo-square>.bingo-square-text").forEach(el => {
+        el.classList.remove('bingo-square-text-unselectable');
+        el.classList.add('bingo-square-text-selectable');
+      })
     }
   }
 
@@ -222,6 +245,11 @@ class CardUI extends AppBaseUI {
         });
     });
 
+    document.querySelector('button#enable-reroll').addEventListener('click', (ev) => {
+      this.toggleEnableRerollButton(ev);
+      ev.preventDefault();
+    });
+
     document.querySelector('button#rebuild').addEventListener('click', (ev) => {
       this.toggle_prompt_form(true);
       this.toggle_prompt_result(false);
@@ -255,6 +283,7 @@ class CardUI extends AppBaseUI {
 
     // Handle long press on mousedown/touchstart
     const handleLongPress = (ev) => {
+      if (!this.long_press_enabled) return;
       const target = getBingoSquareTarget(ev);
       if (!target) return;
 
