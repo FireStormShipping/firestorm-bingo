@@ -116,25 +116,22 @@ class Pool {
     self.crypto.getRandomValues(randomSeed);
     const initial_offset = randomSeed[0] % this.contents.length;
 
-    try {
-      const offset = (initial_offset + this.getNextValidReservation(initial_offset)) % (this.contents.length - 1);
-      const newEntry = this.contents[offset].entry;
+    const offset = (initial_offset + this.getNextValidReservation(initial_offset)) % (this.contents.length - 1);
+    const newEntry = this.contents[offset].entry;
 
-      // Update pool's spaces array
-      this.spaces[slot] = newEntry;
-      this.spaces[slot].used = true;
+    // Update pool's spaces array
+    this.spaces[slot] = newEntry;
+    this.spaces[slot].used = true;
 
-      // Handle case where current entry might be undefined (from missing dataset entries)
-      if (currentEntry) {
-        // Set previous entry to unused only after generating a new entry.
-        // This is to prevent regenerating the same entry.
-        currentEntry.used = false;
-      }
-
-      return newEntry;
-    } catch (error) {
-      throw error;
+    // Handle case where current entry might be undefined (from missing dataset entries)
+    if (currentEntry) {
+      // Set previous entry to unused only after generating a new entry.
+      // This is to prevent regenerating the same entry.
+      currentEntry.used = false;
+    } else {
+      console.warn('Encountered undefined entry; entry may have been removed from dataset');
     }
+    return newEntry;
   }
 }
 
