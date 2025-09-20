@@ -94,7 +94,7 @@
     {
       "text": "Adult Age Play",
       "weight": 3,
-      "sensitivity": "E",
+      "sensitivity": "Q",
       "flags": [
         "specific roleplay"
       ]
@@ -478,6 +478,12 @@
     {
       "text": "Aphrodisiacs",
       "weight": 3,
+      "sensitivity": "E",
+      "enabled": false
+    },
+    {
+      "text": "Aphrodisiac",
+      "weight": 3,
       "sensitivity": "E"
     },
     {
@@ -539,6 +545,12 @@
     },
     {
       "text": "AU or Cross-over",
+      "weight": 1,
+      "sensitivity": "S",
+      "enabled": false
+    },
+    {
+      "text": "AU or Crossover",
       "weight": 1,
       "sensitivity": "S"
     },
@@ -819,6 +831,12 @@
     },
     {
       "text": "Degradation",
+      "weight": 3,
+      "sensitivity": "E",
+      "enabled": false
+    },
+    {
+      "text": "Degrading",
       "weight": 3,
       "sensitivity": "E"
     },
