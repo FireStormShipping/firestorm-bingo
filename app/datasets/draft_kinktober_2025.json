@@ -137,6 +137,12 @@
       "sensitivity": "E"
     },
     {
+      "text": "Feral Play",
+      "weight": 3,
+      "sensitivity": "E",
+      "enabled": false
+    },
+    {
       "text": "Primal Play",
       "weight": 3,
       "sensitivity": "E"
@@ -430,9 +436,21 @@
       "sensitivity": "S"
     },
     {
+      "text": "Consensual Somnophilia",
+      "weight": 3,
+      "sensitivity": "E",
+      "enabled": false
+    },
+    {
       "text": "Sleepy / Wake-up Sex",
       "weight": 3,
       "sensitivity": "E"
+    },
+    {
+      "text": "Kidfic",
+      "weight": 1,
+      "sensitivity": "S",
+      "enabled": false
     },
     {
       "text": "Midfic",
@@ -690,6 +708,12 @@
       "sensitivity": "E"
     },
     {
+      "text": "Forehead Kisses or Touch",
+      "weight": 1,
+      "sensitivity": "S",
+      "enabled": false
+    },
+    {
       "text": "Forehead Kisses",
       "weight": 1,
       "sensitivity": "S"
@@ -706,6 +730,12 @@
       "text": "Washing Hair",
       "weight": 1,
       "sensitivity": "S"
+    },
+    {
+      "text": "Phone Sex",
+      "weight": 3,
+      "sensitivity": "E",
+      "enabled": false
     },
     {
       "text": "Phone/Stolas Sex",
@@ -910,6 +940,12 @@
       ]
     },
     {
+      "text": "Wedding or Bridal Carry",
+      "weight": 1,
+      "sensitivity": "S",
+      "enabled": false
+    },
+    {
       "text": "Wedding",
       "weight": 1,
       "sensitivity": "S"
@@ -938,6 +974,12 @@
       "text": "Morning Sex",
       "weight": 3,
       "sensitivity": "E"
+    },
+    {
+      "text": "Watching a Movie",
+      "weight": 1,
+      "sensitivity": "S",
+      "enabled": false
     },
     {
       "text": "Watching a Movie / Play",
@@ -982,9 +1024,24 @@
       "sensitivity": "Q"
     },
     {
+      "text": "Ears / Tail",
+      "weight": 2,
+      "sensitivity": "Q",
+      "enabled": false
+    },
+    {
       "text": "Ears / Tail (Kemonomimi)",
       "weight": 2,
       "sensitivity": "Q"
+    },
+    {
+      "text": "Priest or Nun",
+      "weight": 3,
+      "sensitivity": "Q",
+      "enabled": false,
+      "flags": [
+        "specific roleplay"
+      ]
     },
     {
       "text": "Priest / Nun",
