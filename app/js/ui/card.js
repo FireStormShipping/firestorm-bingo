@@ -136,7 +136,6 @@ class CardUI extends AppBaseUI {
       this.clearExport();
 
       target.classList.remove('long-press-active');
-      this.ui_toast('success', 'Square rerolled!');
 
     } catch (error) {
       console.error('Reroll failed:', error);
@@ -291,7 +290,7 @@ class CardUI extends AppBaseUI {
 
       longPressTimer = setTimeout(() => {
         this.handleReroll(target);
-      }, 1000);
+      }, 500);
     };
 
     this.bingo_hoist.addEventListener('mousedown', handleLongPress);
