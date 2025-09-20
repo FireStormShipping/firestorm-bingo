@@ -1119,6 +1119,459 @@
       "text": "Lap pillow",
       "weight": 1,
       "sensitivity": "S"
+    },
+    {
+      "text": "Alpha / Alpha",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Omega / Omega",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Alpha / Omega",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Alpha / Beta",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Beta / Beta",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Beta / Omega",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Alpha / Beta / Omega",
+      "sensitivity": "S",
+      "flags": [
+        "\"extras\" / poly"
+      ]
+    },
+    {
+      "text": "Any Polycule",
+      "sensitivity": "S",
+      "flags": [
+        "\"extras\" / poly"
+      ]
+    },
+    {
+      "text": "Unplanned Pregnancy",
+      "sensitivity": "Q",
+      "flags": [
+        "pregnancy"
+      ]
+    },
+    {
+      "text": "Infertility",
+      "sensitivity": "S",
+      "flags": [
+        "pregnancy"
+      ]
+    },
+    {
+      "text": "Role Reversal",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Dominant Alphas",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Submissive Alphas",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Dominant Omegas",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Submissive Omegas",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Secondary Gender Queer",
+      "sensitivity": "Q",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Eikon-specific Secondary Gender",
+      "sensitivity": "S",
+      "flags": [
+        "eikon",
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Secondary Sexism",
+      "sensitivity": "Q",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Protective Alpha",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Provider Alpha",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Pheromones",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Drunk on Pheromones",
+      "sensitivity": "Q",
+      "flags": [
+        "consent issues",
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "True Mates",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Mating Marks",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Mating Bite",
+      "sensitivity": "Q",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Mating Bond",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Mental Bond",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Empath Bond",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Delayed Presentation",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Unexpected Designation",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Overwhelming Senses",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Enhanced Senses",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "No Sense of Smell",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Unique Scents",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Alpha Instincts",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Omega Instincts",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Nesting",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Scent Marking",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Omegas are Prized",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Omegas are Rare",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Alphas are Rare",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Betas are Rare",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Omegas are Slaves",
+      "sensitivity": "Q",
+      "flags": [
+        "consent issues",
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Intersex Omegas",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Alphas have Massive Cocks",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Omegas have Small Cocks",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Self-lubricating Holes",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Biological Dom / Sub",
+      "sensitivity": "S"
+    },
+    {
+      "text": "Misuse of Dom Commands",
+      "sensitivity": "Q",
+      "flags": [
+        "consent issues"
+      ]
+    },
+    {
+      "text": "Scheduled Heat / Rut",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Unplanned Heat / Rut",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Synced Heat / Rut",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Heat / Rut Services",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Marathon Sex",
+      "sensitivity": "E"
+    },
+    {
+      "text": "Heat Haze",
+      "sensitivity": "E",
+      "flags": [
+        "consent issues"
+      ]
+    },
+    {
+      "text": "Alpha Sex Toys",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Omega Sex Toys",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Knotting",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Knotting in Mouth",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Knotting in Hand",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Accidental Knotting",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Alphas / Omegas are Shifters",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Accidental Mating Bite",
+      "sensitivity": "Q",
+      "flags": [
+        "consent issues",
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Enemies to Soulbond",
+      "sensitivity": "S",
+      "flags": [
+        "omegaverse"
+      ]
+    },
+    {
+      "text": "Animal-like Genitalia",
+      "sensitivity": "E",
+      "flags": [
+        "omegaverse"
+      ]
     }
   ]
 }
