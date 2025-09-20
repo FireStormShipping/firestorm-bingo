@@ -64,7 +64,7 @@ class Card {
         entry['flags'] || [],
         entry['weight'] || 1,
         entry['sensitivity'] || 'S',
-        entry['enabled'] || true
+        entry.hasOwnProperty('enabled') ? entry['enabled'] : true
       );
     });
   }
