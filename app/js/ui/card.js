@@ -290,7 +290,7 @@ class CardUI extends AppBaseUI {
 
       longPressTimer = setTimeout(() => {
         this.handleReroll(target);
-      }, 1000);
+      }, 500);
     };
 
     this.bingo_hoist.addEventListener('mousedown', handleLongPress);
