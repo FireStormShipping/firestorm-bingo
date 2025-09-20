@@ -136,7 +136,6 @@ class CardUI extends AppBaseUI {
       this.clearExport();
 
       target.classList.remove('long-press-active');
-      this.ui_toast('success', 'Square rerolled!');
 
     } catch (error) {
       console.error('Reroll failed:', error);
