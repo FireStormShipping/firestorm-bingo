@@ -21,14 +21,14 @@ class UIElement {
     return this.get_parent().querySelector(`${this.tag}[data-id='${this.data.id}']`);
   }
 
-  display() {
+  display(...args) {
     let el = this.get_element();
     if (el === null) {
       el = document.createElement(this.tag);
       this.get_parent().append(el);
     }
 
-    el.outerHTML = this.render();
+    el.outerHTML = this.render(...args);
   }
 
   destroy() {
