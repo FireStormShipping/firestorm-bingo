@@ -215,7 +215,7 @@
         </div>
 
         <div id="prompt-result">
-          <div class="container coeurl">
+          <div id="image-target" class="container coeurl">
             <div id="art-header">
               <picture>
                 <img src="./images/ren_coeurl_cid.png" />
@@ -244,41 +244,39 @@
               </div>
               <div id="bingo-frame"></div>
             </div>
-            <div>
-              <div class="input-group px-0">
-                <button class="btn btn-secondary" type="button" id="export">
-                  Export
-                </button>
-                <textarea
-                  class="form-control"
-                  id="export-card-code"
-                  rows="2"
-                  disabled="disabled"
-                ></textarea>
-                <button
-                  class="btn btn-secondary capture px-3"
-                  type="button"
-                  id="copy-export"
+            <div class="card-controls input-group px-0">
+              <button class="btn btn-secondary" type="button" id="export">
+                Export
+              </button>
+              <textarea
+                class="form-control"
+                id="export-card-code"
+                rows="2"
+                disabled="disabled"
+              ></textarea>
+              <button
+                class="btn btn-secondary capture px-3"
+                type="button"
+                id="copy-export"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clipboard my-1"
+                  viewBox="0 0 16 16"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-clipboard my-1"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"
-                    />
-                    <path
-                      d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"
-                    />
-                  </svg>
-                </button>
-              </div>
+                  <path
+                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"
+                  />
+                  <path
+                    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"
+                  />
+                </svg>
+              </button>
             </div>
-            <div class="mx-auto center">
+            <div class="card-controls mx-auto center">
               <button
                 class="w-80 btn btn-primary zaddy btn-lg"
                 type="submit"
@@ -287,7 +285,7 @@
                 Build Another
               </button>
             </div>
-            <div class="mx-auto center">
+            <div class="card-controls mx-auto center">
               <button
                 class="w-80 btn btn-primary zaddy btn-lg"
                 type="button"
@@ -328,6 +326,7 @@
       <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
     </div>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/snapdom.min.js"></script>
     <script type="module">
       import { CardUI } from "./js/ui/card.js";
       const app = new CardUI();

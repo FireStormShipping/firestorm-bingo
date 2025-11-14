@@ -212,6 +212,27 @@ class CardUI extends AppBaseUI {
     this.ui_toast('success', 'Copied to clipboard');
   }
 
+  async saveCardImage() {
+    const filename="bingo.png"
+    try {
+      const el = document.querySelector('#image-target');
+      const result = await snapdom(el, {
+        exclude: ['.card-controls']
+      });
+      await result.download({ format: 'png', filename: filename });
+      const img = await snapdom.toPng(el, {
+        exclude: ['.card-controls']
+      });
+      document.body.appendChild(img);
+    } catch (err) {
+      console.error(err);
+      this.ui_toast('danger', 'Failed to save card image');
+      return;
+    }
+
+    this.ui_toast('success', `Saved card to ${filename}`);
+  }
+
   bind_event_handlers() {
     super.bind_event_handlers();
 
@@ -263,7 +284,8 @@ class CardUI extends AppBaseUI {
     });
 
     document.querySelector('button#copy-export').addEventListener('click', (ev) => {
-      this.copyExportToClipboard();
+      // this.copyExportToClipboard();
+      this.saveCardImage();
 
       ev.preventDefault();
     });
