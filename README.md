@@ -1,5 +1,9 @@
 # bingo app
 
+## build
+If updates are made to custom/scss/custom.scss, compile with sass.
+`app/scss/custom.scss app/css/custom-bootstrap.min.css --style compressed`
+
 ## deployment
 
 copy ./app/ to deployment destination and serve - all files are static assets.

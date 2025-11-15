@@ -14,16 +14,8 @@ body {
   navigation: auto;
 }
 
-.zaddy {
-  background-color: var(--bs-purple) !important;
-}
-
 header a {
   text-decoration: none;
-}
-
-div.navbar.navbar-dark {
-  background-color: #131313 !important;
 }
 
 /* do not allow svgs inside of buttons to capture mouse events (let them bubble up to the button itself) */
