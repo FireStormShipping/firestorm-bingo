@@ -80,7 +80,7 @@ html[data-bs-theme="light"] bingo-square.marked-square {
 #art-header {
   position: relative;
   z-index: 2;
-  height: 11vmin;
+  height: 14vmin;
 }
 
 #art-header :nth-child(1) img {
