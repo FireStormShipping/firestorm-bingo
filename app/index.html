@@ -74,7 +74,7 @@
                 Welcome to the Firestorm Prompt Bingo Generator!<br>
                 Below you will find a couple of dropdowns and selections you can make.
                 We're tried to make this as adjustable as possible so that you can make
-                a board you will be happy with, whatever your spice and kink tolerance.
+                a board you will be happy with, whatever your spice tolerance and topic preferences.
                 (Don't worry, we'll explain elsewhere how to play Bingo for those who need a refresher.)
               </p>
             </div>
@@ -98,11 +98,8 @@
                     </div>
                     <div class="row">
                       <div class="mb-3">
-                        <label
-                          for="sensitivity-limit-selection"
-                          class="form-label"
-                        >
-                          Sensitivity Threshold
+                        <label for="sensitivity-limit-selection" class="form-label">
+                          Spice Level 🌶️
                         </label>
                         <select
                           class="form-select"
@@ -117,7 +114,7 @@
                     <div class="row">
                       <div class="mb-3">
                         <label for="flag-selection" class="form-label">
-                          Choose Permitted Topics (CMD/CTRL+Click for multiple)
+                          Topics/Categories (CMD/CTRL+Click for multiple)
                         </label>
                         <select
                           class="form-select"
@@ -132,11 +129,7 @@
               </div>
               <div class="row px-4 mt-2">
                 <div class="col-lg-8 offset-lg-2">
-                  <button
-                    class="w-100 btn btn-primary btn-lg"
-                    type="submit"
-                    id="submit"
-                  >
+                  <button id="submit" type="submit" class="w-100 btn btn-primary btn-lg">
                     Build My Bingo Card
                   </button>
                 </div>
@@ -154,21 +147,14 @@
                     <label for="import-card-code" class="form-label">
                       Saved Bingo Card Code
                     </label>
-                    <textarea
-                      class="form-control"
-                      id="import-card-code"
-                      rows="3"
-                    ></textarea>
+                    <textarea id="import-card-code" class="form-control" rows="3">
+                    </textarea>
                   </div>
                 </div>
               </div>
               <div class="row px-4 mt-2">
                 <div class="col-lg-8 offset-lg-2">
-                  <button
-                    class="w-100 btn btn-primary btn-lg"
-                    type="submit"
-                    id="import"
-                  >
+                  <button id="import" type="submit" class="w-100 btn btn-primary btn-lg">
                     Import A Previous Card
                   </button>
                 </div>
@@ -179,18 +165,18 @@
             <h3>How to Make Your Card:</h3>
             <h4>Pick Your Prompt Pool</h4>
             <p>
-              This is the full list of prompts you'll be working with. Our latest event
-              is Kinktober, but you're welcome to choose whichever you like. The event
-              is just an excuse to be creative!
+              This is the list of prompts you'll be working with. Our latest event
+              was Kinktober, but you're welcome to choose whichever you like.
+              The event is just an excuse to be creative!
             </p>
-            <h4>Set Your Sensitivity Threshold</h4>
+            <h4>Set Your Spice Level</h4>
             <p>
               This changes the spiciness of your prompts, basically the prompt's rating.
               The three options available are Safe, Questionable, and Explicit.
-              If you pick Safe, only SFW prompts will appear. If you go up to Explicit,
-              then anything from Safe, Questionable, and Explicit could appear on your card.
+              If you pick Safe, only <abbr title="Safe For Work" class="initialism">SFW</abbr> prompts will appear.
+              If you go up to Explicit, then anything from Safe, Questionable, and Explicit could appear on your card.
             </p>
-            <h4>Choose Your Permitted Topics</h4>
+            <h4>Choose Your Topics/Categories</h4>
             <p>
               These are categories of prompts that some people want to avoid for
               one reason or another. We use an "opt in" system so you can choose
@@ -207,8 +193,9 @@
             </p>
             <h4>Save and Load</h4>
             <p>
-              To "save" a card (including its marked squares), click the
-              Export button. You can import that code later to "load" your
+              To save a card image (including its marked squares), click the Save button.
+              If you want to be able to load your card again to mark squares or reroll prompts,
+              you can export the card's code and import it later to load your
               card, or a friend's card if they share their code with you.
             </p>
           </div>
@@ -250,49 +237,22 @@
               <button class="btn btn-secondary" type="button" id="export">
                 Export
               </button>
-              <textarea
-                class="form-control"
-                id="export-card-code"
-                rows="2"
-                disabled="disabled"
-              ></textarea>
-              <button
-                class="btn btn-secondary capture px-3"
-                type="button"
-                id="copy-export"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-clipboard my-1"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"
-                  />
-                  <path
-                    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"
-                  />
+              <textarea id="export-card-code" class="form-control" rows="2" disabled="disabled">
+              </textarea>
+              <button class="btn btn-secondary capture px-3" type="button" id="copy-export">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
                 </svg>
               </button>
             </div>
             <div class="card-controls mx-auto center">
-              <button
-                class="w-80 btn btn-primary btn-lg"
-                type="submit"
-                id="rebuild"
-              >
+              <button id="rebuild" type="submit" class="w-80 btn btn-primary btn-lg">
                 Build Another
               </button>
             </div>
             <div class="card-controls mx-auto center">
-              <button
-                class="w-80 btn btn-primary btn-lg"
-                type="button"
-                id="enable-reroll"
-              >
+              <button id="enable-reroll" type="button" class="w-80 btn btn-primary btn-lg">
                 Enable Re-roll
               </button>
             </div>
