@@ -161,43 +161,83 @@
               </div>
             </form>
           </div>
-          <div class="py-2 text-justify">
+          <div id="accordionHowToForm" class="accordion py-2 text-justify">
             <h3>How to Make Your Card:</h3>
-            <h4>Pick Your Prompt Pool</h4>
-            <p>
-              This is the list of prompts you'll be working with. Our latest event
-              was Kinktober, but you're welcome to choose whichever you like.
-              The event is just an excuse to be creative!
-            </p>
-            <h4>Set Your Spice Level</h4>
-            <p>
-              This changes the spiciness of your prompts, basically the prompt's rating.
-              The three options available are Safe, Questionable, and Explicit.
-              If you pick Safe, only <abbr title="Safe For Work" class="initialism">SFW</abbr> prompts will appear.
-              If you go up to Explicit, then anything from Safe, Questionable, and Explicit could appear on your card.
-            </p>
-            <h4>Choose Your Topics/Categories</h4>
-            <p>
-              These are categories of prompts that some people want to avoid for
-              one reason or another. We use an "opt in" system so you can choose
-              whatever fits your interests best. We don't judge!
-            </p>
-            <h4>Build Your Card!</h4>
-            <p>
-              From there, just hit 'Build My Bingo Card' and see what comes up!
-              If you don't like your card, you can click the button beneath it
-              that will allow you to generate another card. It will save the
-              choices you made, so you can quickly generate from the same prompt
-              pool or go back and adjust your selections until you build something
-              that works for you.
-            </p>
-            <h4>Save and Load</h4>
-            <p>
-              To save a card image (including its marked squares), click the Save button.
-              If you want to be able to load your card again to mark squares or reroll prompts,
-              you can export the card's code and import it later to load your
-              card, or a friend's card if they share their code with you.
-            </p>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#how-to-dataset" aria-expanded="true" aria-controls="how-to-dataset">
+                  Pick Your Prompt Pool
+                </button>
+              </h4>
+              <div id="how-to-dataset" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  This is the list of prompts you'll be working with. Our latest event
+                  was Kinktober, but you're welcome to choose whichever you like.
+                  The event is just an excuse to be creative!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#how-to-sensitivity" aria-expanded="true" aria-controls="how-to-sensitivity">
+                  Set Your Spice Level
+                </button>
+              </h4>
+              <div id="how-to-sensitivity" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                This changes the spiciness of your prompts, basically the prompt's rating.
+                The three options available are Safe, Questionable, and Explicit.
+                If you pick Safe, only <abbr title="Safe For Work" class="initialism">SFW</abbr> prompts will appear.
+                If you go up to Explicit, then anything from Safe, Questionable, and Explicit could appear on your card.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#how-to-topics" aria-expanded="true" aria-controls="how-to-topics">
+                  Choose Your Topics/Categories
+                </button>
+              </h4>
+              <div id="how-to-topics" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                These are categories of prompts that some people want to avoid for
+                one reason or another. We use an "opt in" system so you can choose
+                whatever fits your interests best. We don't judge!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#how-to-build" aria-expanded="true" aria-controls="how-to-build">
+                  Build Your Card!
+                </button>
+              </h4>
+              <div id="how-to-build" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                From there, just hit 'Build My Bingo Card' and see what comes up!
+                If you don't like your card, you can click the button beneath it
+                that will allow you to generate another card. It will save the
+                choices you made, so you can quickly generate from the same prompt
+                pool or go back and adjust your selections until you build something
+                that works for you.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#how-to-save" aria-expanded="true" aria-controls="how-to-save">
+                  Save and Load
+                </button>
+              </h4>
+              <div id="how-to-save" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                To save a card image (including its marked squares), click the Save button.
+                If you want to be able to load your card again to mark squares or reroll prompts,
+                you can export the card's code and import it later to load your
+                card, or a friend's card if they share their code with you.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -257,29 +297,53 @@
               </button>
             </div>
           </div>
-          <div>
-            <h4>How to Re-Roll Specific Squares</h4>
-            <p>
-              If you are generally happy with your bingo card but want to re-roll a specific square,
-              you can click the button "Enable Re-roll" to enable re-rolling mode.
-              Then, long press on the card square you want to change.
-              This will trigger the re-roll action and replace the prompt with a new one.
-              To exit re-roll mode, simply click the "Disable Re-roll" button.
-            </p>
-            <h4>How to Play</h4>
-            <p>
-              In your medium of choice, create stuff that vibes with the boxes
-              on your bingo card. When your creation is done, you get to mark off
-              a square (or more, if you used multiple prompts in the same creation).
-            </p>
-            <h4>How to Win</h4>
-            <p>
-              If you mark off all the squares in a row, column, or diagonal, then you win!
-              There are other options too, such as marking off a 2x2, 3x3, 4x4, or 5x5 area
-              (also known as a blackout). Whatever version of the game you want to play works!
-              Some people will even try to incorporate an entire row into one creative work;
-              that is also winning. Set the conditions that you will enjoy and go create!
-            </p>
+          <div class="accordion" id="accordionHowTo">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#how-to-reroll" aria-expanded="true" aria-controls="how-to-reroll">
+                  How to Re-Roll Specific Squares
+                </button>
+              </h2>
+              <div id="how-to-reroll" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  If you are generally happy with your bingo card but want to re-roll a specific square,
+                  you can click the button "Enable Re-roll" to enable re-rolling mode.
+                  Then, long press on the card square you want to change.
+                  This will trigger the re-roll action and replace the prompt with a new one.
+                  To exit re-roll mode, simply click the "Disable Re-roll" button.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#how-to-play" aria-expanded="true" aria-controls="how-to-play">
+                  How to Play
+                </button>
+              </h2>
+              <div id="how-to-play" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  In your medium of choice, create stuff that vibes with the boxes
+                on your bingo card. When your creation is done, you get to mark off
+                a square (or more, if you used multiple prompts in the same creation).
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#how-to-win" aria-expanded="true" aria-controls="how-to-win">
+                  How to Win
+                </button>
+              </h2>
+              <div id="how-to-win" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  If you mark off all the squares in a row, column, or diagonal, then you win!
+                  There are other options too, such as marking off a 2x2, 3x3, 4x4, or 5x5 area
+                  (also known as a blackout). Whatever version of the game you want to play works!
+                  Some people will even try to incorporate an entire row into one creative work;
+                  that is also winning. Set the conditions that you will enjoy and go create!
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
