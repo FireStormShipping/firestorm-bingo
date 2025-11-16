@@ -27,6 +27,10 @@ a.capture > svg > path {
   pointer-events: none;
 }
 
+button.btn-icon > svg:has(+ span) {
+  margin-top: -0.1rem;
+}
+
 .pending-load {
   display: none;
 }
