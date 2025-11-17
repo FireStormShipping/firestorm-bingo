@@ -168,23 +168,23 @@ class CardUI extends AppBaseUI {
   }
 
   toggleEnableRerollButton(ev) {
-    const rerollButton = ev.target;
-    if (rerollButton.innerText.includes('Enable Re-roll')) {
-      rerollButton.innerText = 'Disable Re-roll';
+    const textSpan = ev.target.querySelector('span');
+    if (textSpan.innerText.includes('Enable Re-roll')) {
+      textSpan.innerText = 'Disable Re-roll';
       this.ui_toast('info', 'Re-roll enabled! Long press a square to re-roll it.');
       this.long_press_enabled = true;
-      document.querySelectorAll("#bingo-frame>bingo-square>.bingo-square-text").forEach(el => {
+      document.querySelectorAll("#bingo-frame > bingo-square > .bingo-square-text").forEach(el => {
         el.classList.remove('bingo-square-text-selectable');
         el.classList.add('bingo-square-text-unselectable');
-      })
+      });
     } else {
-      rerollButton.innerText = 'Enable Re-roll';
+      textSpan.innerText = 'Enable Re-roll';
       this.ui_toast('info', 'Re-roll disabled.');
       this.long_press_enabled = false;
-      document.querySelectorAll("#bingo-frame>bingo-square>.bingo-square-text").forEach(el => {
+      document.querySelectorAll("#bingo-frame > bingo-square > .bingo-square-text").forEach(el => {
         el.classList.remove('bingo-square-text-unselectable');
         el.classList.add('bingo-square-text-selectable');
-      })
+      });
     }
   }
 
@@ -212,8 +212,7 @@ class CardUI extends AppBaseUI {
     this.ui_toast('success', 'Copied to clipboard');
   }
 
-  async saveCardImage() {
-    const filename="bingo.png"
+  async saveCardImage(filename="bingo.png") {
     try {
       const el = document.querySelector('#image-target');
       const result = await snapdom(el);
@@ -278,7 +277,12 @@ class CardUI extends AppBaseUI {
     });
 
     document.querySelector('button#copy-export').addEventListener('click', (ev) => {
-      // this.copyExportToClipboard();
+      this.copyExportToClipboard();
+
+      ev.preventDefault();
+    });
+
+    document.querySelector('button#save-image').addEventListener('click', (ev) => {
       this.saveCardImage();
 
       ev.preventDefault();
