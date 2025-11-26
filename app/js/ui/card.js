@@ -168,7 +168,7 @@ class CardUI extends AppBaseUI {
   }
 
   toggleEnableRerollButton(ev) {
-    const textSpan = ev.target.querySelector('span');
+    const textSpan = ev.currentTarget.querySelector('span');
     if (textSpan.innerText.includes('Enable Re-roll')) {
       textSpan.innerText = 'Disable Re-roll';
       this.ui_toast('info', 'Re-roll enabled! Long press a square to re-roll it.');
