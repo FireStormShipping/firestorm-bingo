@@ -1,49 +1,139 @@
 {
-    "entries": [
-      {"text": "Mischief"},
-      {"text": "Contraption"},
-      {"text": "Escape Artist"},
-      {"text": "Eating"},
-      {"text": "Body Heat"},
-      {"text": "Tag / Chase"},
-      {"text": "Hiding"},
-      {"text": "Napping"},
-      {"text": "Cuddling"},
-      {"text": "Bath time"},
-      {"text": "Sunbathing"},
-      {"text": "Swimming"},
-      {"text": "Skittering"},
-      {"text": "Hunting"},
-      {"text": "Scouting with Gav"},
-      {"text": "\"Helping\""},
-      {"text": "Helping Blackthorn heat the furnace"},
-      {"text": "Helping Cid with ledgers"},
-      {"text": "Costumes / Outfits"},
-      {"text": "Helping Mid with a project"},
-      {"text": "Sleeping in the rafters"},
-      {"text": "Accidental? Arson"},
-      {"text": "Velcro / Clingy"},
-      {"text": "Ambrosia"},
-      {"text": "Torgal Adventure"},
-      {"text": "Torgal Mishaps"},
-      {"text": "No Eat Lizzer!"},
-      {"text": "Lizzer, No Eat!"},
-      {"text": "Children"},
-      {"text": "Tail loss"},
-      {"text": "Chameleon"},
-      {"text": "Eikon Abilities"},
-      {"text": "New Friends"},
-      {"text": "Befriending Monsters"},
-      {"text": "Beast Tamer"},
-      {"text": "Sick Lizzer"},
-      {"text": "Sick Cid"},
-      {"text": "Cliiiive!"},
-      {"text": "Wall Thoughts"},
-      {"text": "On The Prowl"},
-      {"text": "New Favorite Toy"},
-      {"text": "New Favorite Place"},
-      {"text": "No Go Places"},
-      {"text": "Blep / Mlem"},
-      {"text": "Memories / Dreams"}
-    ]
+  "entries": [
+    {
+      "text": "Mischief"
+    },
+    {
+      "text": "Contraption"
+    },
+    {
+      "text": "Escape Artist"
+    },
+    {
+      "text": "Eating"
+    },
+    {
+      "text": "Body Heat"
+    },
+    {
+      "text": "Tag / Chase"
+    },
+    {
+      "text": "Hiding"
+    },
+    {
+      "text": "Napping"
+    },
+    {
+      "text": "Cuddling"
+    },
+    {
+      "text": "Bath time"
+    },
+    {
+      "text": "Sunbathing"
+    },
+    {
+      "text": "Swimming"
+    },
+    {
+      "text": "Skittering"
+    },
+    {
+      "text": "Hunting"
+    },
+    {
+      "text": "Scouting with Gav"
+    },
+    {
+      "text": "\"Helping\""
+    },
+    {
+      "text": "Helping Blackthorn heat the furnace"
+    },
+    {
+      "text": "Helping Cid with ledgers"
+    },
+    {
+      "text": "Costumes / Outfits"
+    },
+    {
+      "text": "Helping Mid with a project"
+    },
+    {
+      "text": "Sleeping in the rafters"
+    },
+    {
+      "text": "Accidental? Arson"
+    },
+    {
+      "text": "Velcro / Clingy"
+    },
+    {
+      "text": "Ambrosia"
+    },
+    {
+      "text": "Torgal Adventure"
+    },
+    {
+      "text": "Torgal Mishaps"
+    },
+    {
+      "text": "No Eat Lizzer!"
+    },
+    {
+      "text": "Lizzer, No Eat!"
+    },
+    {
+      "text": "Children"
+    },
+    {
+      "text": "Tail loss"
+    },
+    {
+      "text": "Chameleon"
+    },
+    {
+      "text": "Eikon Abilities"
+    },
+    {
+      "text": "New Friends"
+    },
+    {
+      "text": "Befriending Monsters"
+    },
+    {
+      "text": "Beast Tamer"
+    },
+    {
+      "text": "Sick Lizzer"
+    },
+    {
+      "text": "Sick Cid"
+    },
+    {
+      "text": "Cliiiive!"
+    },
+    {
+      "text": "Wall Thoughts"
+    },
+    {
+      "text": "On The Prowl"
+    },
+    {
+      "text": "New Favorite Toy"
+    },
+    {
+      "text": "New Favorite Place"
+    },
+    {
+      "text": "No Go Places"
+    },
+    {
+      "text": "Blep / Mlem"
+    },
+    {
+      "text": "Memories / Dreams"
+    }
+  ]
 }
