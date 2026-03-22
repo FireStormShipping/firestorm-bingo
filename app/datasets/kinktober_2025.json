@@ -15,9 +15,7 @@
       ]
     },
     {
-      "text": "Waiting Out Weather",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Waiting Out Weather"
     },
     {
       "text": "Gloves",
@@ -26,8 +24,6 @@
     },
     {
       "text": "Eikonic Instincts",
-      "weight": 1,
-      "sensitivity": "S",
       "flags": [
         "eikon"
       ]
@@ -41,14 +37,10 @@
       ]
     },
     {
-      "text": "Fix-It",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Fix-It"
     },
     {
-      "text": "Crack",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Crack"
     },
     {
       "text": "Lap Dance",
@@ -77,14 +69,10 @@
       "sensitivity": "E"
     },
     {
-      "text": "Sickfic",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Sickfic"
     },
     {
-      "text": "Camping",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Camping"
     },
     {
       "text": "Body Swap",
@@ -139,8 +127,7 @@
     {
       "text": "Feral Play",
       "weight": 3,
-      "sensitivity": "E",
-      "enabled": false
+      "sensitivity": "E"
     },
     {
       "text": "Primal Play",
@@ -177,9 +164,7 @@
       "sensitivity": "Q"
     },
     {
-      "text": "Napping Together",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Napping Together"
     },
     {
       "text": "Boot Worship",
@@ -225,9 +210,7 @@
       ]
     },
     {
-      "text": "Martha's Rest",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Martha's Rest"
     },
     {
       "text": "Cock & Ball Torture",
@@ -248,9 +231,7 @@
       "sensitivity": "E"
     },
     {
-      "text": "Massage",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Massage"
     },
     {
       "text": "Slime or Flan",
@@ -316,16 +297,12 @@
     },
     {
       "text": "Eikonic Powers",
-      "weight": 1,
-      "sensitivity": "S",
       "flags": [
         "eikon"
       ]
     },
     {
-      "text": "Proposal",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Proposal"
     },
     {
       "text": "Vampire",
@@ -387,9 +364,7 @@
       "sensitivity": "E"
     },
     {
-      "text": "Anniversary",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Anniversary"
     },
     {
       "text": "Shibari",
@@ -416,9 +391,7 @@
       "sensitivity": "Q"
     },
     {
-      "text": "Bridal Carry",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Bridal Carry"
     },
     {
       "text": "Body Worship",
@@ -431,15 +404,12 @@
       "sensitivity": "Q"
     },
     {
-      "text": "Sharing food",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Sharing food"
     },
     {
       "text": "Consensual Somnophilia",
       "weight": 3,
-      "sensitivity": "E",
-      "enabled": false
+      "sensitivity": "E"
     },
     {
       "text": "Sleepy / Wake-up Sex",
@@ -447,15 +417,10 @@
       "sensitivity": "E"
     },
     {
-      "text": "Kidfic",
-      "weight": 1,
-      "sensitivity": "S",
-      "enabled": false
+      "text": "Kidfic"
     },
     {
-      "text": "Midfic",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Midfic"
     },
     {
       "text": "Lord Commander / Subordinate",
@@ -466,20 +431,15 @@
       ]
     },
     {
-      "text": "The Pocky Game",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "The Pocky Game"
     },
     {
-      "text": "Soul Mates",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Soul Mates"
     },
     {
       "text": "Aphrodisiacs",
       "weight": 3,
-      "sensitivity": "E",
-      "enabled": false
+      "sensitivity": "E"
     },
     {
       "text": "Aphrodisiac",
@@ -501,9 +461,7 @@
       "sensitivity": "E"
     },
     {
-      "text": "Kissing Hand",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Kissing Hand"
     },
     {
       "text": "Clothed / Unclothed",
@@ -516,14 +474,10 @@
       "sensitivity": "E"
     },
     {
-      "text": "Tying a Tie",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Tying a Tie"
     },
     {
-      "text": "Pining",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Pining"
     },
     {
       "text": "Daddy Kink",
@@ -544,15 +498,10 @@
       "sensitivity": "E"
     },
     {
-      "text": "AU or Cross-over",
-      "weight": 1,
-      "sensitivity": "S",
-      "enabled": false
+      "text": "AU or Cross-over"
     },
     {
-      "text": "AU or Crossover",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "AU or Crossover"
     },
     {
       "text": "Scent Kink",
@@ -560,9 +509,7 @@
       "sensitivity": "E"
     },
     {
-      "text": "Sharing Clothes",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Sharing Clothes"
     },
     {
       "text": "Eikon on Human",
@@ -638,9 +585,7 @@
       "sensitivity": "Q"
     },
     {
-      "text": "Hurt / Comfort",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Hurt / Comfort"
     },
     {
       "text": "Blindfold",
@@ -653,19 +598,13 @@
       "sensitivity": "E"
     },
     {
-      "text": "Blind Date",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Blind Date"
     },
     {
-      "text": "First Kiss",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "First Kiss"
     },
     {
       "text": "Main Character Death",
-      "weight": 1,
-      "sensitivity": "S",
       "flags": [
         "death"
       ]
@@ -695,9 +634,7 @@
       ]
     },
     {
-      "text": "Indirect Kiss",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Indirect Kiss"
     },
     {
       "text": "Praise Kink",
@@ -710,9 +647,7 @@
       "sensitivity": "E"
     },
     {
-      "text": "Costumes",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Costumes"
     },
     {
       "text": "Blow Jobs",
@@ -720,15 +655,10 @@
       "sensitivity": "E"
     },
     {
-      "text": "Forehead Kisses or Touch",
-      "weight": 1,
-      "sensitivity": "S",
-      "enabled": false
+      "text": "Forehead Kisses or Touch"
     },
     {
-      "text": "Forehead Kisses",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Forehead Kisses"
     },
     {
       "text": "Werewolf Clive",
@@ -739,15 +669,12 @@
       ]
     },
     {
-      "text": "Washing Hair",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Washing Hair"
     },
     {
       "text": "Phone Sex",
       "weight": 3,
-      "sensitivity": "E",
-      "enabled": false
+      "sensitivity": "E"
     },
     {
       "text": "Phone/Stolas Sex",
@@ -784,9 +711,7 @@
       "sensitivity": "E"
     },
     {
-      "text": "Cooking",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Cooking"
     },
     {
       "text": "Lingerie",
@@ -813,16 +738,12 @@
     },
     {
       "text": "Different Eikon",
-      "weight": 1,
-      "sensitivity": "S",
       "flags": [
         "eikon"
       ]
     },
     {
-      "text": "Holding Hands",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Holding Hands"
     },
     {
       "text": "Voice Kink",
@@ -832,8 +753,7 @@
     {
       "text": "Degradation",
       "weight": 3,
-      "sensitivity": "E",
-      "enabled": false
+      "sensitivity": "E"
     },
     {
       "text": "Degrading",
@@ -841,9 +761,7 @@
       "sensitivity": "E"
     },
     {
-      "text": "Makeup",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Makeup"
     },
     {
       "text": "One Bed",
@@ -868,9 +786,7 @@
       ]
     },
     {
-      "text": "Cuddling",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Cuddling"
     },
     {
       "text": "Pain Play",
@@ -881,9 +797,7 @@
       ]
     },
     {
-      "text": "Dancing",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Dancing"
     },
     {
       "text": "Breath Play",
@@ -894,9 +808,7 @@
       ]
     },
     {
-      "text": "PDA",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "PDA"
     },
     {
       "text": "Frotting",
@@ -921,9 +833,7 @@
       ]
     },
     {
-      "text": "Meet Cute",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Meet Cute"
     },
     {
       "text": "Coming Untouched",
@@ -940,9 +850,7 @@
       ]
     },
     {
-      "text": "Kabedon",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Kabedon"
     },
     {
       "text": "Shared Body Heat",
@@ -958,15 +866,10 @@
       ]
     },
     {
-      "text": "Wedding or Bridal Carry",
-      "weight": 1,
-      "sensitivity": "S",
-      "enabled": false
+      "text": "Wedding or Bridal Carry"
     },
     {
-      "text": "Wedding",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Wedding"
     },
     {
       "text": "Creampie",
@@ -979,14 +882,10 @@
       "sensitivity": "E"
     },
     {
-      "text": "Cid's Shortcuts",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Cid's Shortcuts"
     },
     {
-      "text": "Tarja's Infirmary",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Tarja's Infirmary"
     },
     {
       "text": "Morning Sex",
@@ -994,15 +893,10 @@
       "sensitivity": "E"
     },
     {
-      "text": "Watching a Movie",
-      "weight": 1,
-      "sensitivity": "S",
-      "enabled": false
+      "text": "Watching a Movie"
     },
     {
-      "text": "Watching a Movie / Play",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Watching a Movie / Play"
     },
     {
       "text": "Teacher / Student",
@@ -1013,9 +907,7 @@
       ]
     },
     {
-      "text": "Lizzer",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Lizzer"
     },
     {
       "text": "Drunk Sex",
@@ -1044,8 +936,7 @@
     {
       "text": "Ears / Tail",
       "weight": 2,
-      "sensitivity": "Q",
-      "enabled": false
+      "sensitivity": "Q"
     },
     {
       "text": "Ears / Tail (Kemonomimi)",
@@ -1056,7 +947,6 @@
       "text": "Priest or Nun",
       "weight": 3,
       "sensitivity": "Q",
-      "enabled": false,
       "flags": [
         "specific roleplay"
       ]
@@ -1088,9 +978,7 @@
       "sensitivity": "E"
     },
     {
-      "text": "Forehead Touch",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Forehead Touch"
     },
     {
       "text": "In Public",
@@ -1111,9 +999,7 @@
       ]
     },
     {
-      "text": "Beach Episode",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Beach Episode"
     },
     {
       "text": "Ultima Mind Control",
@@ -1134,9 +1020,7 @@
       ]
     },
     {
-      "text": "Lap pillow",
-      "weight": 1,
-      "sensitivity": "S"
+      "text": "Lap pillow"
     }
   ]
 }
