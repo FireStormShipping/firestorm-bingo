@@ -216,7 +216,7 @@ class CardUI extends AppBaseUI {
     try {
       const el = document.querySelector('#image-target');
       const result = await snapdom(el);
-      await result.download({ format: 'png', filename: filename });
+      await result.download({ format: 'png', width: 1000, filename: filename });
     } catch (err) {
       console.error(err);
       this.ui_toast('danger', 'Failed to save card image');
