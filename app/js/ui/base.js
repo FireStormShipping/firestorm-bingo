@@ -86,8 +86,10 @@ class AppBaseUI {
   toggle_show_content(visible = false) {
     if(visible === true) {
       document.querySelector('#wrapper').classList.remove('pending-load');
+      document.querySelector('#navbar-wrapper').classList.remove('pending-load');
     } else {
       document.querySelector('#wrapper').classList.add('pending-load');
+      document.querySelector('#navbar-wrapper').classList.add('pending-load');
     }
   }
 

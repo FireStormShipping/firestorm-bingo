@@ -18,12 +18,14 @@
     <!-- <meta http-equiv='expires' content='0'>  -->
     <!-- <meta http-equiv='pragma' content='no-cache'> -->
 
-    <link rel="stylesheet" href="./css/application.css" />
     <link rel="stylesheet" href="./css/custom-bootstrap.min.css" />
+    <!-- Load app css after libraries so override cascades correctly -->
+    <link rel="stylesheet" href="./css/application.css" />
+
   </head>
   <body>
     <header>
-      <div class="navbar">
+      <div class="navbar pending-load" id="navbar-wrapper">
         <div class="container">
           <div class="d-flex align-items-center">
             <a href="/"><span class="navbar-brand text-muted">FireStorm Prompt Bingo Generator</span></a>
