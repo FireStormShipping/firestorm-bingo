@@ -121,10 +121,30 @@ class BingoSquareElem extends UIElement {
     return `sensitivity-${this.data.sensitivity.description}`;
   }
 
+  get_text_selectable_class(long_press_enabled = false) {
+    return long_press_enabled ? 'bingo-square-text-unselectable' : 'bingo-square-text-selectable';
+  }
+
   render(long_press_enabled = false) {
+    const squareClasses=[
+      "is-bingo-square",
+      this.get_marked_class(),
+      this.get_sensitivity_class(),
+    ]
+    const squareClassesStr = squareClasses.join(" ");
+
+    const textClasses=[
+      "text-responsive",
+      "text-center",
+      "text-break",
+      "bingo-square-text",
+      this.get_text_selectable_class(long_press_enabled),
+    ];
+    const textClasesStr = textClasses.join(" ");
+
     return `
-    <${this.tag} class="is-bingo-square ${this.get_marked_class()} ${this.get_sensitivity_class()}" data-id="bingo-square-num-${this.data.index}">
-      <div class="text-responsive text-center text-break bingo-square-text ${long_press_enabled ? 'bingo-square-text-unselectable' : 'bingo-square-text-selectable'}">${this.data.text}</div>
+    <${this.tag} class="${squareClassesStr}" data-id="bingo-square-num-${this.data.index}">
+      <div class="${textClasesStr}">${this.data.text}</div>
     </${this.tag}>`;
   }
 }

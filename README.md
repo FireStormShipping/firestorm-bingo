@@ -1,5 +1,12 @@
 # bingo app
 
+## build
+If updates are made to custom/scss/custom.scss, acquire the Bootstrap source files and compile with sass.
+
+https://getbootstrap.com/docs/5.3/customize/sass/#file-structure
+
+`app/scss/custom.scss app/css/custom-bootstrap.min.css --style compressed`
+
 ## deployment
 
 copy ./app/ to deployment destination and serve - all files are static assets.
